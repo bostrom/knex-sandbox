@@ -8330,6 +8330,9 @@ function Yk() {
 function kj() {
   return r(Xk) ? new X(null, 4, 5, Y, [fh, new X(null, 1, 5, Y, [rj], null), new X(null, 1, 5, Y, [qj], null), new X(null, 1, 5, Y, [Sk], null)], null) : new X(null, 1, 5, Y, [Yk], null);
 }
+window.onerror = function(a) {
+  return alert(a.toString());
+};
 (function() {
   var a = ik(1);
   Qj(function(a) {
