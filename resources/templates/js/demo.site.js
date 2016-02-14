@@ -102,13 +102,13 @@ g.toString = function() {
   return this.Ra;
 };
 function la(a, b) {
-  a.sort(b || ma);
+  a.sort(b || na);
 }
 function oa(a, b) {
   for (var c = 0;c < a.length;c++) {
     a[c] = {index:c, value:a[c]};
   }
-  var d = b || ma;
+  var d = b || na;
   la(a, function(a, b) {
     return d(a.value, b.value) || a.index - b.index;
   });
@@ -116,7 +116,7 @@ function oa(a, b) {
     a[c] = a[c].value;
   }
 }
-function ma(a, b) {
+function na(a, b) {
   return a > b ? 1 : a < b ? -1 : 0;
 }
 ;if ("undefined" === typeof pa) {
@@ -810,10 +810,10 @@ function oc(a, b) {
     if (Fa(b.ja)) {
       return 1;
     }
-    c = ma(a.ja, b.ja);
-    return 0 === c ? ma(a.name, b.name) : c;
+    c = na(a.ja, b.ja);
+    return 0 === c ? na(a.name, b.name) : c;
   }
-  return ma(a.name, b.name);
+  return na(a.name, b.name);
 }
 function D(a, b, c, d, e) {
   this.ja = a;
@@ -995,7 +995,7 @@ Date.prototype.G = function(a, b) {
 Date.prototype.eb = !0;
 Date.prototype.Va = function(a, b) {
   if (b instanceof Date) {
-    return ma(this.valueOf(), b.valueOf());
+    return na(this.valueOf(), b.valueOf());
   }
   throw Error([x("Cannot compare "), x(this), x(" to "), x(b)].join(""));
 };
@@ -1562,52 +1562,52 @@ g.call = function() {
     a = this;
     return a.v.D ? a.v.D() : a.v.call(null);
   }
-  var F = null, F = function(F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ff, Kg, Gi) {
+  var F = null, F = function(F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, ff, Kg, Gi) {
     switch(arguments.length) {
       case 1:
         return Qa.call(this, F);
       case 2:
-        return La.call(this, F, na);
+        return La.call(this, F, ma);
       case 3:
-        return aa.call(this, F, na, ra);
+        return aa.call(this, F, ma, ra);
       case 4:
-        return P.call(this, F, na, ra, sa);
+        return P.call(this, F, ma, ra, sa);
       case 5:
-        return L.call(this, F, na, ra, sa, wa);
+        return L.call(this, F, ma, ra, sa, wa);
       case 6:
-        return H.call(this, F, na, ra, sa, wa, Aa);
+        return H.call(this, F, ma, ra, sa, wa, Aa);
       case 7:
-        return E.call(this, F, na, ra, sa, wa, Aa, Ea);
+        return E.call(this, F, ma, ra, sa, wa, Aa, Ea);
       case 8:
-        return C.call(this, F, na, ra, sa, wa, Aa, Ea, Ka);
+        return C.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka);
       case 9:
-        return B.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa);
+        return B.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa);
       case 10:
-        return v.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa);
+        return v.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa);
       case 11:
-        return t.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab);
+        return t.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab);
       case 12:
-        return q.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib);
+        return q.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib);
       case 13:
-        return p.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb);
+        return p.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb);
       case 14:
-        return m.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb);
+        return m.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb);
       case 15:
-        return k.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb);
+        return k.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb);
       case 16:
-        return h.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc);
+        return h.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc);
       case 17:
-        return f.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc);
+        return f.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc);
       case 18:
-        return e.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd);
+        return e.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd);
       case 19:
-        return d.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie);
+        return d.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je);
       case 20:
-        return c.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ff);
+        return c.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, ff);
       case 21:
-        return b.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ff, Kg);
+        return b.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, ff, Kg);
       case 22:
-        return a.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ff, Kg, Gi);
+        return a.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, ff, Kg, Gi);
     }
     throw Error("Invalid arity: " + arguments.length);
   };
@@ -1770,7 +1770,7 @@ function td(a, b) {
   }
   if ("number" === typeof a) {
     if ("number" === typeof b) {
-      return ma(a, b);
+      return na(a, b);
     }
     throw Error([x("Cannot compare "), x(a), x(" to "), x(b)].join(""));
   }
@@ -1780,7 +1780,7 @@ function td(a, b) {
   if ("string" !== typeof a && !Da(a) && !0 !== a && !1 !== a || Ga(a) !== Ga(b)) {
     throw Error([x("Cannot compare "), x(a), x(" to "), x(b)].join(""));
   }
-  return ma(a, b);
+  return na(a, b);
 }
 function ud(a, b) {
   var c = S(a), d = S(b);
@@ -2168,10 +2168,10 @@ function Md(a, b) {
     if (Fa(b.ja)) {
       return 1;
     }
-    c = ma(a.ja, b.ja);
-    return 0 === c ? ma(a.name, b.name) : c;
+    c = na(a.ja, b.ja);
+    return 0 === c ? na(a.name, b.name) : c;
   }
-  return ma(a.name, b.name);
+  return na(a.name, b.name);
 }
 function U(a, b, c, d) {
   this.ja = a;
@@ -2723,7 +2723,7 @@ function he(a) {
     }
   }
 }
-function je() {
+function ie() {
   return function() {
     function a(a) {
       if (0 < arguments.length) {
@@ -7500,7 +7500,7 @@ Wj.prototype.fc = function() {
     }
     break;
   }
-  Cj(this.Qa, je());
+  Cj(this.Qa, ie());
   return uj(this);
 };
 Wj.prototype.Tb = function(a, b, c) {
@@ -7882,11 +7882,15 @@ function sk(a) {
 }
 function tk() {
   var a = [pk.dropTableIfExists("authors"), pk.dropTableIfExists("books"), pk.dropTableIfExists("subjects")], b = [pk.createTableIfNotExists("authors", qk), pk.createTableIfNotExists("books", rk), pk.createTableIfNotExists("subjects", sk)];
-  return nk(Promise.all(a).then(function(a, b) {
-    return function() {
-      return Promise.all(b);
-    };
-  }(a, b)));
+  try {
+    return nk(Promise.all(a).then(function(a, b) {
+      return function() {
+        return Promise.all(b);
+      };
+    }(a, b)));
+  } catch (c) {
+    return alert("WOAH");
+  }
 }
 ;var uk = new Knex({client:"websql", debug:!0, useNullAsDefault:!0}), vk = new Knex({client:"websql", useNullAsDefault:!0});
 function wk() {
@@ -8302,7 +8306,8 @@ subject:"Horror"}, {id:10, subject:"Mystery"}, {id:11, subject:"Poetry"}, {id:12
 function Wk(a, b) {
   return (vk.h ? vk.h(a) : vk.call(null, a)).insert(b);
 }
-;var qa = !1, pa = function() {
+;qa = !1;
+pa = function() {
   function a(a) {
     var d = null;
     if (0 < arguments.length) {
@@ -8323,16 +8328,20 @@ function Wk(a, b) {
   };
   a.C = b;
   return a;
-}(), Xk = !Fa(window.openDatabase);
+}();
+function Xk() {
+  try {
+    return window.openDatabase("testdb", "1.0", "testing indexeddb support", 100), !0;
+  } catch (a) {
+    return !1;
+  }
+}
 function Yk() {
-  return new X(null, 2, 5, Y, [qg, new X(null, 3, 5, Y, [vg, new X(null, 2, 5, Y, [Dh, "IndexedDB Needed"], null), new X(null, 2, 5, Y, [Eh, "IndexedDB gives browsers access to a SQLite-esque database, which the sandbox needs to function. Unfortunately only webkit browsers these days have IndexedDB, if you come back with Chrome, Safari or Opera you'll be able to try the sandbox."], null)], null)], null);
+  return new X(null, 2, 5, Y, [qg, new X(null, 4, 5, Y, [vg, new X(null, 2, 5, Y, [Dh, "IndexedDB Needed"], null), new X(null, 2, 5, Y, [Eh, "IndexedDB gives browsers access to a SQLite-esque database, which the sandbox needs to function. Unfortunately only webkit browsers these days have IndexedDB, if you come back with Chrome, Safari or Opera you'll be able to try the sandbox."], null), new X(null, 2, 5, Y, [Eh, "(Also possible your mobile browser is just denying access...)"], null)], null)], null);
 }
 function kj() {
-  return r(Xk) ? new X(null, 4, 5, Y, [fh, new X(null, 1, 5, Y, [rj], null), new X(null, 1, 5, Y, [qj], null), new X(null, 1, 5, Y, [Sk], null)], null) : new X(null, 1, 5, Y, [Yk], null);
+  return r(Xk()) ? new X(null, 4, 5, Y, [fh, new X(null, 1, 5, Y, [rj], null), new X(null, 1, 5, Y, [qj], null), new X(null, 1, 5, Y, [Sk], null)], null) : new X(null, 1, 5, Y, [Yk], null);
 }
-window.onerror = function(a) {
-  return alert(a.toString());
-};
 (function() {
   var a = ik(1);
   Qj(function(a) {
@@ -8388,7 +8397,7 @@ window.onerror = function(a) {
           return function(a) {
             var b = a[1];
             if (1 === b) {
-              return a[1] = r(Xk) ? 2 : 3, Vg;
+              return b = Xk(), a[1] = r(b) ? 2 : 3, Vg;
             }
             if (2 === b) {
               return b = tk(), dk(a, 5, b);

@@ -11,16 +11,21 @@
 
 (enable-console-print!)
 
-(def has-index-db (not (not (.-openDatabase js/window))))
+(defn can-use-index-db []
+  (try
+    (.openDatabase js/window "testdb" "1.0" "testing indexeddb support" 100)
+    true
+    (catch :default e false)))
 
 (defn no-index-db-warning []
   [:div.center
    [:div.alert.alert-danger
     [:h3 "IndexedDB Needed"]
-    [:p "IndexedDB gives browsers access to a SQLite-esque database, which the sandbox needs to function. Unfortunately only webkit browsers these days have IndexedDB, if you come back with Chrome, Safari or Opera you'll be able to try the sandbox."]]])
+    [:p "IndexedDB gives browsers access to a SQLite-esque database, which the sandbox needs to function. Unfortunately only webkit browsers these days have IndexedDB, if you come back with Chrome, Safari or Opera you'll be able to try the sandbox."]
+    [:p "(Also possible your mobile browser is just denying access...)"]]])
 
 (defn container []
-  (if has-index-db
+  (if (can-use-index-db)
     [:div
      [intro/cmp]
      [db-schema/cmp]
@@ -29,11 +34,10 @@
 
 (defn init! []
   (go
-    (when has-index-db
+    (when (can-use-index-db)
       (<? (create-db/create))
       (<? (populate-db/populate)))
     (reagent/render-component [container]
                               (. js/document getElementById "app"))))
 
-(aset js/window "onerror" #(js/alert (.toString %)))
 (init!)

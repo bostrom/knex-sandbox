@@ -30,6 +30,8 @@
         create-table-promises #js [(.createTableIfNotExists schema "authors" create-authors-table)
                                    (.createTableIfNotExists schema "books" create-books-table)
                                    (.createTableIfNotExists schema "subjects" create-subjects-table)]]
-
-    (pasync/pair-port (.then (.all js/Promise drop-table-promises)
-                             #(.all js/Promise create-table-promises)))))
+    (try
+      (pasync/pair-port (.then (.all js/Promise drop-table-promises)
+                               #(.all js/Promise create-table-promises)))
+      (catch :default e (js/alert "WOAH"))
+                               )))
