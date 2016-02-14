@@ -12,7 +12,7 @@ window.currentPromise = null;
 
 var full_raw_js = [cljs.core.str("window.currentPromise = "),cljs.core.str(raw_js)].join('');
 try{eval(full_raw_js);
-}catch (e6950){var e_6951 = e6950;
+}catch (e13741){var e_13742 = e13741;
 }
 var temp__4425__auto__ = window.currentPromise;
 if(cljs.core.truth_(temp__4425__auto__)){

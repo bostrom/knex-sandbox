@@ -2,6 +2,7 @@
   (:require [cljs.core.async :refer [put! chan]]))
 
 (def knex (js/Knex. #js {:client "websql" :debug true}))
+(def knex-no-debug (js/Knex. #js {:client "websql"}))
 
 (defn init-chan []
   (let [out (chan)

@@ -9,18 +9,22 @@
             [cljs.core.async :refer [<!]]
             [clojure.string :refer [join]]))
 
-(def model (atom models/Author))
 (def hydration (atom nil))
 
 (def hydration-result (atom nil))
 (def hydration-error (atom nil))
 (def sql-statements (atom []))
 
+(def first-example
+"knex
+  .select()
+  .table('subjects')")
 
 (defn do-hydration []
   (go
     (when @hydration
       (reset! sql-statements [])
+      (reset! hydration-result nil)
       (let [hr (<! (hydrate @hydration))
             result (hr 0)
             error (hr 1)]
@@ -30,16 +34,14 @@
             (reset! hydration-error nil))
           (reset! hydration-error error))))))
 
-(defn set-hydration [new-model new-hydration]
-  (reset! model new-model)
+(defn set-hydration [new-hydration]
   (reset! hydration new-hydration)
   (do-hydration))
 
-(defn example [model modelName hydration]
+(defn example [hydration]
   [:div.example
-   [:a {:on-click #(set-hydration model hydration)}
-    [:span.example-model modelName]
-    [:span.example-hydration hydration]]])
+   [:a {:on-click #(set-hydration hydration)}
+    [:span.example-hydration [:pre hydration]]]])
 
 (defn examples []
   (let [collapsed (atom false)]
@@ -47,28 +49,21 @@
       [:div.examples (when @collapsed {:style {:padding 0 :margin 0}})
        (when-not @collapsed [:h3 "Examples"])
        (when-not @collapsed [:div.examples-container
-        [example models/Author "Author" "[first_name,last_name]"]
-        [example models/Book "Book" "[id,title]"]
-        [example models/Author "Author" "[first_name,last_name,books=[title]]"]
-        [example models/Subject "Subject" "[subject,books=count]"]
-        [example models/Subject "Subject" "[subject,books=collect(title)]"]
-        [example models/Author "Author" "[first_name,last_name,books=[title,subject=[subject]]]"]])
+        [example first-example]
+        [example
+"knex
+  .column('first_name', 'last_name')
+  .select()
+  .from('authors')"]
+        [example
+"knex
+  .table('authors')
+  .innerJoin('books', 'books.author_id', 'authors.id')
+  .select('authors.first_name', 'books.title')"]])
        [expander/cmp collapsed "examples"]])))
 
 (defn get-value [e]
   (-> e .-target .-value))
-
-(defn model-dropdown []
-  (let [values models/all
-        m @model] ;; hack to force Reagent to rerender when model changes
-    [:select {:on-change (fn [e]
-                           (set-hydration (values (get-value e)) ""))}
-     (for [key (keys values)]
-       [:option
-        (if (= (values key) @model)
-          {:value key :selected "selected"}
-          {:value key})
-        key])]))
 
 (defn tabs [current-atom]
   (let [sqls @sql-statements
@@ -107,7 +102,7 @@
 (defn hydration-input []
   [:div.hydration-input
    [:textarea {:value @hydration
-               :style { :width "400px" }
+               :style { :width "600px" :height "160px" }
                :on-change (fn [e]
                             (reset! hydration (get-value e))
                             (do-hydration))}]])
@@ -115,6 +110,7 @@
 
 (defn cmp []
   [:div
+   [examples]
    [hydration-input]
    (when @hydration-error
      [:div.hydration-error @hydration-error])
@@ -128,3 +124,4 @@
             (swap! sql-statements conj sql))))))
 
 (listen!)
+(set-hydration first-example)

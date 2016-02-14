@@ -3,6 +3,7 @@ goog.provide('demo.knex');
 goog.require('cljs.core');
 goog.require('cljs.core.async');
 demo.knex.knex = (new Knex({"client": "websql", "debug": true}));
+demo.knex.knex_no_debug = (new Knex({"client": "websql"}));
 demo.knex.init_chan = (function demo$knex$init_chan(){
 var out = cljs.core.async.chan.call(null);
 var client = demo.knex.knex.client;
