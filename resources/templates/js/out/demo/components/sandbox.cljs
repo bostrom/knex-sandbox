@@ -51,6 +51,7 @@
     (fn []
       [:div.examples (when @collapsed {:style {:padding 0 :margin 0}})
        (when-not @collapsed [:h3 "Examples"])
+       [expander/cmp collapsed "examples"]
        (when-not @collapsed [:div.examples-container
         [example first-example]
         [example
@@ -62,19 +63,20 @@
 "knex
   .table('authors')
   .innerJoin('books', 'books.author_id', 'authors.id')
-  .select('authors.first_name', 'books.title')"]])
-       [expander/cmp collapsed "examples"]])))
+  .select('authors.first_name', 'books.title')"]])])))
 
 (defn get-value [e]
   (-> e .-target .-value))
 
 (defn tabs [current-atom]
   (let [sqls @sql-statements
-        sqls-c (count sqls)]
+        sqls-c (count sqls)
+        rows @hydration-result
+        row-c (count rows)]
     [:ul.nav.nav-tabs
      [:li
       [:a {:on-click #(reset! current-atom "records")}
-       (str "returned " (.-length @hydration-result) " rows")]]
+       (str "returned " row-c " row" (when-not (= row-c 1) "s"))]]
      [:li
       [:a {:on-click #(reset! current-atom "sql")}
        (str sqls-c " SQL statement" (when-not (= sqls-c 1) "s"))]]]))
@@ -105,7 +107,7 @@
 (defn hydration-input []
   [:div.hydration-input
    [:textarea {:value @hydration
-               :style { :width "600px" :height "160px" }
+               :style { :width "100%" :height "300px" }
                :on-change (fn [e]
                             (reset! hydration (get-value e))
                             (do-hydration))}]])
@@ -113,12 +115,14 @@
 
 (defn cmp []
   [:div
-   [examples]
-   [hydration-input]
-   (when @hydration-error
-     [:div.hydration-error @hydration-error])
-   (when @hydration-result
-     [hydration-display])])
+   [:div.half
+    [examples]
+    [hydration-input]]
+   [:div.half
+     (when @hydration-error
+       [:div.hydration-error @hydration-error])
+     (when @hydration-result
+       [hydration-display])]])
 
 (defn listen! []
   (let [out (knex/init-chan)]

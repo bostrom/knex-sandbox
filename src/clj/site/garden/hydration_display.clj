@@ -35,18 +35,18 @@
      {:margin-left (px 10)
       :font-size (em 0.5)
       :font-style "italic"}]
-    [:.examples-container
-     {:text-align "left"
-      :width (percent 50)
-      :margin [[0 (percent 24)]]}]
     [:.expander
      {:color freelance-blue}]]
    [:.hydration-error
-    {:color (rgb 255 150 150)
+    {:color (rgb 255 100 100)
+     :padding (px 20)
+     :margin (px 20)
+     :background-color "#EFEFEF"
+     :border "1px solid #444"
      :text-align "center"
-     :width (percent 100)}]
+     :width "calc(100% - 40px)"}]
    [:.hydration-display
-    {:padding (px 20)
+    {:padding [[(px 0) (px 20) (px 20) (px 20)]]
      :background-color bg-color}
     [:.hydration-display-title
      {:margin-top (px -10)

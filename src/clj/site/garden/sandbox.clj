@@ -16,10 +16,22 @@
     [:p {:margin-bottom (px 20)}]
     [:.expander
      {:color "white"}]]
-   
+
+   [:.half
+    {:vertical-align "top"
+    :width (percent 50)
+    :display "inline-block"}]
+
    [:.expander
     {:cursor "pointer"}]
-   
+
+   [:.examples
+    {:text-align "left"
+     :background-color "white"}
+    [:h3
+     {:display "inline-block"
+     :margin-right (px 10)}]]
+
    [:.alert
     {:margin (px 40)
      :padding-bottom (px 40)}

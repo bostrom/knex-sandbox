@@ -5,6 +5,8 @@
             [site.garden.page :as page]))
 
 (defstyles stylesheet
+  [:body
+    {:background-color "#2c3e50"}]
   [:*
    {:border-radius "0 !important"}]
   [:.navbar
@@ -15,7 +17,7 @@
   [:.navbar.navbar-default
    {:margin-bottom 0}]
   [:header
-   [:.container 
+   [:.container
     {:padding-top (px 60)}]]
   [:.summary
    {:margin [[0 0 (px 40) 0]]}]
@@ -37,6 +39,6 @@
 
   [:img
    {:max-width (percent 100)}]
-  
+
   (page/export)
   (sandbox/export))
