@@ -57,7 +57,7 @@
                                    :pseudo-names true
                                    :externs [
                                              "react/externs/react.js"
-                                             "resources/templates/js/knex.js"
+                                             "resources/templates/js/knex.min.js"
                                              "resources/templates/js/lodash.min.js"
                                              "resources/templates/js/bluebird.min.js"
                                             ]}

@@ -17,7 +17,7 @@
   [:div.center
    [:div.alert.alert-danger
     [:h3 "IndexedDB Needed"]
-    [:p "IndexedDB gives browsers access to a SQLite-esque database, which the demo needs to function. Unfortunately only webkit browsers these days have IndexedDB, if you come back with Chrome, Safari or Opera you'll be able to try the demo."]]])
+    [:p "IndexedDB gives browsers access to a SQLite-esque database, which the sandbox needs to function. Unfortunately only webkit browsers these days have IndexedDB, if you come back with Chrome, Safari or Opera you'll be able to try the sandbox."]]])
 
 (defn container []
   (if has-index-db
