@@ -17,11 +17,11 @@
        ]]]
     [:p {:font-size (px 15)}]]
    [:.primitive-number
-    {:color "blue"}] 
+    {:color "blue"}]
    [:.primitive-string
-    {:color "green"}] 
+    {:color "green"}]
    [:.indent
-    {:margin-left (px 20)}] 
+    {:margin-left (px 20)}]
    [:.object-view-entry-key
     {:margin-right (px 10)
      :font-weight "bold"}]
@@ -32,4 +32,8 @@
       :left (px -10)
       :top 0
       :cursor "pointer"}]]
+   [:.knex-version
+    {:font-size (px 12)
+      :color "#999"
+      :margin-top (px 5)}]
    ])

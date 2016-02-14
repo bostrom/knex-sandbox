@@ -24,8 +24,8 @@ goog.addDependency("../reagent/impl/component.js", ['reagent.impl.component'], [
 goog.addDependency("../reagent/impl/template.js", ['reagent.impl.template'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'clojure.string']);
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug']);
 goog.addDependency("../demo/components/db_schema.js", ['demo.components.db_schema'], ['reagent.core', 'cljs.core', 'demo.components.expander']);
+goog.addDependency("../demo/components/intro.js", ['demo.components.intro'], ['reagent.core', 'cljs.core']);
 goog.addDependency("../demo/hydrate.js", ['demo.hydrate'], ['demo.knex', 'cljs.core', 'cljs_promises.async', 'cljs_promises.core']);
-goog.addDependency("../demo/components/models.js", ['demo.components.models'], ['demo.knex', 'cljs.core']);
 goog.addDependency("../demo/components/records.js", ['demo.components.records'], ['reagent.core', 'cljs.core']);
-goog.addDependency("../demo/components/sandbox.js", ['demo.components.sandbox'], ['demo.hydrate', 'demo.knex', 'reagent.core', 'cljs.core', 'cljs.core.async', 'demo.components.models', 'demo.components.records', 'clojure.string', 'demo.components.expander']);
-goog.addDependency("../demo/core.js", ['demo.core'], ['demo.components.db_schema', 'reagent.core', 'cljs.core', 'cljs_promises.async', 'demo.create_db', 'demo.components.sandbox', 'demo.populate_db']);
+goog.addDependency("../demo/components/sandbox.js", ['demo.components.sandbox'], ['demo.hydrate', 'demo.knex', 'reagent.core', 'cljs.core', 'cljs.core.async', 'demo.components.records', 'clojure.string', 'demo.components.expander']);
+goog.addDependency("../demo/core.js", ['demo.core'], ['demo.components.db_schema', 'reagent.core', 'cljs.core', 'demo.components.intro', 'cljs_promises.async', 'demo.create_db', 'demo.components.sandbox', 'demo.populate_db']);

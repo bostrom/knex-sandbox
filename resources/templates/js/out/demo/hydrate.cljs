@@ -3,8 +3,6 @@
             [cljs-promises.core :as p]
             [cljs-promises.async :as pasync]))
 
-(def bookends (js/Bookends.))
-
 (defn hydrate [raw-js]
   (set! (.-knex js/window) knex)
   (set! (.-currentPromise js/window) nil)

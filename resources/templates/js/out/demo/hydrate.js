@@ -4,7 +4,6 @@ goog.require('cljs.core');
 goog.require('demo.knex');
 goog.require('cljs_promises.core');
 goog.require('cljs_promises.async');
-demo.hydrate.bookends = (new Bookends());
 demo.hydrate.hydrate = (function demo$hydrate$hydrate(raw_js){
 window.knex = demo.knex.knex;
 
@@ -20,7 +19,7 @@ return cljs_promises.async.pair_port.call(null,promise);
 } else {
 return null;
 }
-}catch (e8448){var e = e8448;
+}catch (e7878){var e = e7878;
 return cljs_promises.async.pair_port.call(null,Promise.reject(e));
 }});
 

@@ -2,7 +2,7 @@
 goog.provide('demo.create_db');
 goog.require('cljs.core');
 goog.require('cljs_promises.async');
-demo.create_db.knex = (new Knex({"client": "websql"}));
+demo.create_db.knex = (new Knex({"client": "websql", "useNullAsDefault": true}));
 demo.create_db.schema = demo.create_db.knex.schema;
 window.knex = demo.create_db.knex;
 demo.create_db.id = (function demo$create_db$id(table){

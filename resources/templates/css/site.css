@@ -134,6 +134,12 @@ img {
   cursor: pointer;
 }
 
+.knex-version {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
 .sql-view {
   padding: 10px;
   border: 1px solid grey;
@@ -219,6 +225,16 @@ img {
 
 .hydration-input select {
   font-size: 20px;
+}
+
+.intro {
+  background-color: rgb(241, 255, 124);
+  padding: 10px;
+}
+
+.intro p {
+  font-size: 14px;
+  margin: 0;
 }
 
 header.db-schema {

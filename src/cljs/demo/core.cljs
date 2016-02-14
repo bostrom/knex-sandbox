@@ -2,6 +2,7 @@
     (:require-macros [cljs.core.async.macros :refer [go]])
     (:require [demo.create-db :as create-db]
               [demo.populate-db :as populate-db]
+              [demo.components.intro :as intro]
               [demo.components.db-schema :as db-schema]
               [demo.components.sandbox :as sandbox]
               [reagent.core :as reagent]
@@ -21,6 +22,7 @@
 (defn container []
   (if has-index-db
     [:div
+     [intro/cmp]
      [db-schema/cmp]
      [sandbox/cmp]]
     [no-index-db-warning]))

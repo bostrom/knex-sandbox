@@ -27,6 +27,9 @@
 #js { :id 4267  :title "2001: A Space Odyssey"       :author_id 2001  :subject_id 15 }
 #js { :id 1608  :title "The Cat in the Hat"          :author_id 1809  :subject_id 2 }
 #js { :id 1590  :title "Bartholomew and the Oobleck" :author_id 1809  :subject_id 2 }
+#js { :id 1591  :title "One Fish, Two Fish, Red Fish, Blue Fish" :author_id 1809  :subject_id 2 }
+#js { :id 1592  :title "Horton Hears a Who"          :author_id 1809  :subject_id 2 }
+#js { :id 1593  :title "The Lorax"                   :author_id 1809  :subject_id 2 }
 #js { :id 25908 :title "Franklin in the Dark"        :author_id 15990 :subject_id 2 }
 #js { :id 1501  :title "Goodnight Moon"              :author_id 2031  :subject_id 2 }
 #js { :id 190   :title "Little Women"                :author_id 16    :subject_id 6 }

@@ -9,6 +9,6 @@
       [:header.db-schema (when @collapsed {:class "collapsed"})
        (when-not @collapsed
          [:div
-          [:p "In this webpage is a small IndexedDB of books."]
+          [:p "Here's the tiny database we're playing with"]
           [:img {:src "img/schema.svg"}]])
        [expander/cmp collapsed "schema"]])))

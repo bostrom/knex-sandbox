@@ -1,7 +1,6 @@
 (ns demo.components.sandbox
   (:require-macros [cljs.core.async.macros :refer [go]])
   (:require [reagent.core :refer [atom]]
-            [demo.components.models :as models]
             [demo.hydrate :refer [hydrate]]
             [demo.components.records :as records]
             [demo.components.expander :as expander]
@@ -15,10 +14,7 @@
 (def hydration-error (atom nil))
 (def sql-statements (atom []))
 
-(def first-example
-"knex
-  .select()
-  .table('subjects')")
+(def first-example "knex('subjects')")
 
 (defn do-hydration []
   (go
@@ -56,14 +52,19 @@
         [example first-example]
         [example
 "knex
-  .column('first_name', 'last_name')
-  .select()
-  .from('authors')"]
-        [example
-"knex
   .table('authors')
   .innerJoin('books', 'books.author_id', 'authors.id')
-  .select('authors.first_name', 'books.title')"]])])))
+  .select('authors.first_name', 'books.title')"]
+        [example
+"knex
+  .select(
+    knex.raw('first_name || \" \" || last_name as author'),
+    knex.raw('count(books.id) as quantity')
+  )
+  .from('books')
+  .innerJoin('authors', 'authors.id', 'books.author_id')
+  .groupBy('author_id')
+  .orderBy('quantity', 'desc')"]])])))
 
 (defn get-value [e]
   (-> e .-target .-value))
@@ -79,7 +80,8 @@
        (str "returned " row-c " row" (when-not (= row-c 1) "s"))]]
      [:li
       [:a {:on-click #(reset! current-atom "sql")}
-       (str sqls-c " SQL statement" (when-not (= sqls-c 1) "s"))]]]))
+       (str sqls-c " SQL statement" (when-not (= sqls-c 1) "s"))]]
+     [:li.pull-right.knex-version "knex " (-> js/window .-knex .-VERSION)]]))
 
 (defn sql-view [sql]
   [:div.sql-view

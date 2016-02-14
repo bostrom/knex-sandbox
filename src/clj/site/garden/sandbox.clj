@@ -9,6 +9,13 @@
    (records/export)
    (hydration-display/export)
 
+   [:.intro
+    {:background-color "rgb(241, 255, 124)"
+    :padding (px 10)}
+    [:p
+     {:font-size (px 14)
+      :margin 0}]]
+
    [:header.db-schema
     {:padding [[(px 40) 0]]}
     [:&.collapsed

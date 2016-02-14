@@ -57,8 +57,8 @@
                                    :externs [
                                              "react/externs/react.js"
                                              "resources/templates/js/knex.js"
-                                             "resources/templates/js/bookshelf.js"
-                                             "resources/templates/js/bookends.js"
+                                             "resources/templates/js/lodash.min.js"
+                                             "resources/templates/js/bluebird.min.js"
                                             ]}
                        }]
               }

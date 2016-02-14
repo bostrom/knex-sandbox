@@ -1,7 +1,7 @@
 (ns demo.create-db
   (:require [cljs-promises.async :as pasync]))
 
-(def knex (js/Knex. #js {:client "websql"}))
+(def knex (js/Knex. #js {:client "websql" :useNullAsDefault true}))
 (def schema (.-schema knex))
 (set! (.-knex js/window) knex)
 
@@ -26,10 +26,10 @@
 (defn create []
   (let [drop-table-promises #js [(.dropTableIfExists schema "authors")
                                  (.dropTableIfExists schema "books")
-                                 (.dropTableIfExists schema "subjects")] 
+                                 (.dropTableIfExists schema "subjects")]
         create-table-promises #js [(.createTableIfNotExists schema "authors" create-authors-table)
                                    (.createTableIfNotExists schema "books" create-books-table)
                                    (.createTableIfNotExists schema "subjects" create-subjects-table)]]
 
-    (pasync/pair-port (.then (.all js/Promise drop-table-promises) 
+    (pasync/pair-port (.then (.all js/Promise drop-table-promises)
                              #(.all js/Promise create-table-promises)))))
