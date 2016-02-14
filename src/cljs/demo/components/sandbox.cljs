@@ -32,7 +32,10 @@
           (do
             (reset! hydration-result result)
             (reset! hydration-error nil))
-          (reset! hydration-error error))))))
+          (do
+            (println "and error in here " error)
+            (let [error-msg (or (.-message error) (.toString error))]
+              (reset! hydration-error error-msg))))))))
 
 (defn set-hydration [new-hydration]
   (reset! hydration new-hydration)

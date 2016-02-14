@@ -12,8 +12,7 @@ window.currentPromise = null;
 
 var full_raw_js = [cljs.core.str("window.currentPromise = "),cljs.core.str(raw_js)].join('');
 try{eval(full_raw_js);
-}catch (e13741){var e_13742 = e13741;
-}
+
 var temp__4425__auto__ = window.currentPromise;
 if(cljs.core.truth_(temp__4425__auto__)){
 var promise = temp__4425__auto__;
@@ -21,6 +20,8 @@ return cljs_promises.async.pair_port.call(null,promise);
 } else {
 return null;
 }
-});
+}catch (e8448){var e = e8448;
+return cljs_promises.async.pair_port.call(null,Promise.reject(e));
+}});
 
 //# sourceMappingURL=hydrate.js.map
