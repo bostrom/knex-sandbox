@@ -263,6 +263,15 @@ header.db-schema .expander {
   cursor: pointer;
 }
 
+.instructions {
+  margin: 20px;
+  color: white;
+}
+
+.instructions p {
+  font-size: 14px;
+}
+
 .examples {
   text-align: left;
   background-color: white;
