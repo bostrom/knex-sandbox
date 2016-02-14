@@ -53,7 +53,8 @@
                         :source-paths ["src/cljs"]
                         :compiler {:output-to "resources/templates/js/demo.site.js"
                                    :optimizations :advanced
-                                   :pretty-print false
+                                   :pretty-print true
+                                   :pseudo-names true
                                    :externs [
                                              "react/externs/react.js"
                                              "resources/templates/js/knex.js"
