@@ -35,4 +35,5 @@
     (reagent/render-component [container]
                               (. js/document getElementById "app"))))
 
+(aset js/window "onerror" #(js/alert (.toString %)))
 (init!)
