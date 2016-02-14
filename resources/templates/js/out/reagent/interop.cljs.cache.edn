@@ -1,0 +1,2 @@
+;; Analyzed by ClojureScript 0.0-3308
+{:name reagent.interop, :doc nil, :excludes #{}, :use-macros nil, :require-macros nil, :uses nil, :requires nil, :imports nil, :defs {fvars {:name reagent.interop/fvars, :file "resources/templates/js/out/reagent/interop.cljs", :line 3, :column 1, :end-line 3, :end-column 11, :meta {:file "/Users/matt/dev/knexPlayground/resources/templates/js/out/reagent/interop.cljs", :line 3, :column 6, :end-line 3, :end-column 11}}}}
