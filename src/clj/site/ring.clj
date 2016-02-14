@@ -54,7 +54,7 @@
      (html5
        [:head
         [:meta {:charset "utf-8"}]
-        [:title "Knex Playground"]
+        [:title "Knex Sandbox"]
         [:link {:rel "stylesheet" :href "css/syntax.css"}]
         [:link {:rel "stylesheet" :href "css/bootstrap.min.css"}]
         [:link {:rel "stylesheet" :href "css/freelancer.css"}]
