@@ -128,9 +128,9 @@
 
 (defn listen! []
   (let [out (knex/init-chan)]
+    (set-hydration first-example)
     (go (while true
           (let [sql (<! out)]
             (swap! sql-statements conj sql))))))
 
 (listen!)
-(set-hydration first-example)
