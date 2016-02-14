@@ -32,6 +32,12 @@
    [:.expander
     {:cursor "pointer"}]
 
+   [:.instructions
+    {:margin (px 20)
+      :color "white"}
+    [:p
+     {:font-size (px 14)}]]
+
    [:.examples
     {:text-align "left"
      :background-color "white"}

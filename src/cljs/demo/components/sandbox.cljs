@@ -14,8 +14,6 @@
 (def hydration-error (atom nil))
 (def sql-statements (atom []))
 
-(def first-example "knex('subjects')")
-
 (defn do-hydration []
   (go
     (when @hydration
@@ -49,7 +47,7 @@
        (when-not @collapsed [:h3 "Examples"])
        [expander/cmp collapsed "examples"]
        (when-not @collapsed [:div.examples-container
-        [example first-example]
+        [example "knex('subjects')"]
         [example
 "knex
   .table('authors')
@@ -115,6 +113,10 @@
                             (do-hydration))}]])
 
 
+(defn instructions []
+  [:div.instructions
+   [:p "Click an example to the left or type in a knex statement lower left"]])
+
 (defn cmp []
   [:div
    [:div.half
@@ -123,12 +125,12 @@
    [:div.half
      (when @hydration-error
        [:div.hydration-error @hydration-error])
-     (when @hydration-result
-       [hydration-display])]])
+     (if @hydration-result
+       [hydration-display]
+       [instructions])]])
 
 (defn listen! []
   (let [out (knex/init-chan)]
-    (set-hydration first-example)
     (go (while true
           (let [sql (<! out)]
             (swap! sql-statements conj sql))))))

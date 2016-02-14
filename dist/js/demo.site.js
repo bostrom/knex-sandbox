@@ -1562,7 +1562,7 @@ g.call = function() {
     a = this;
     return a.v.D ? a.v.D() : a.v.call(null);
   }
-  var F = null, F = function(F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ef, Kg, Hi) {
+  var F = null, F = function(F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ff, Kg, Gi) {
     switch(arguments.length) {
       case 1:
         return Qa.call(this, F);
@@ -1603,11 +1603,11 @@ g.call = function() {
       case 19:
         return d.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie);
       case 20:
-        return c.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ef);
+        return c.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ff);
       case 21:
-        return b.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ef, Kg);
+        return b.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ff, Kg);
       case 22:
-        return a.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ef, Kg, Hi);
+        return a.call(this, F, na, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, ie, ff, Kg, Gi);
     }
     throw Error("Invalid arity: " + arguments.length);
   };
@@ -4391,7 +4391,7 @@ g.G = function(a, b) {
   }
 };
 g.Xa = function() {
-  return new ff({}, this.o.length, Ja(this.o));
+  return new ef({}, this.o.length, Ja(this.o));
 };
 g.da = function() {
   return zb(gf, this.meta);
@@ -4501,14 +4501,14 @@ var gf = new n(null, 0, [], Cc), hf = 8;
 n.prototype[Ia] = function() {
   return vc(this);
 };
-function ff(a, b, c) {
+function ef(a, b, c) {
   this.Ya = a;
   this.$a = b;
   this.o = c;
   this.B = 258;
   this.H = 56;
 }
-g = ff.prototype;
+g = ef.prototype;
 g.$ = function() {
   if (r(this.Ya)) {
     return Gd(this.$a);
@@ -6072,723 +6072,14 @@ Ig = new U(null, "cljsRender", "cljsRender", 247449928), Jg = new U(null, "final
 -1501286995), xa = new U(null, "flush-on-newline", "flush-on-newline", -151457939), Zg = new U(null, "componentWillUnmount", "componentWillUnmount", 1573788814), $g = new U(null, "div.hydration-input", "div.hydration-input", 1118611150), ah = new U(null, "charset", "charset", -1063822193), bh = new U(null, "on-click", "on-click", 1632826543), ch = new U(null, "shouldComponentUpdate", "shouldComponentUpdate", 1795750960), dh = new U(null, "style", "style", -496642736), eh = new U(null, "textarea", 
 "textarea", -650375824), fh = new U(null, "div", "div", 1057191632), ya = new U(null, "readably", "readably", 1129599760), Vf = new U(null, "more-marker", "more-marker", -14717935), gh = new U(null, "for", "for", -1323786319), hh = new U(null, "render", "render", -1408033454), ih = new U(null, "sql", "sql", 1251448786), jh = new U(null, "div.examples-container", "div.examples-container", -594635501), kh = new U(null, "div.half", "div.half", 1332116275), lh = new U(null, "div.object-view-entry", "div.object-view-entry", 
 1708248308), Ca = new U(null, "print-length", "print-length", 1931866356), mh = new U(null, "class", "class", -2030961996), nh = new U(null, "span.object-view-entry-key", "span.object-view-entry-key", -233653292), oh = new U(null, "catch-exception", "catch-exception", -1997306795), ph = new U(null, "padding", "padding", 1660304693), qh = new U(null, "auto-run", "auto-run", 1958400437), rh = new U(null, "div.intro", "div.intro", 1937098677), sh = new U(null, "prev", "prev", -1597069226), th = new U(null, 
-"code", "code", 1586293142), uh = new U(null, "continue-block", "continue-block", -1852047850), vh = new U(null, "div.hydration-display-sql", "div.hydration-display-sql", 2123688630), wh = new U(null, "on-dispose", "on-dispose", 2105306360), xh = new U(null, "componentFunction", "componentFunction", 825866104), yh = new U(null, "div.example", "div.example", 265005017), zh = new U(null, "div.sql-view-sql", "div.sql-view-sql", 496262137), Ah = new U(null, "component-function", "component-function", 
-654728922), Bh = new U(null, "on-change", "on-change", -732046149), Ch = new U(null, "h3", "h3", 2067611163), ag = new U(null, "alt-impl", "alt-impl", 670969595), ng = new U(null, "keywordize-keys", "keywordize-keys", 1310784252), Dh = new U(null, "p", "p", 151049309), Eh = new U(null, "div.object-view.expander-container", "div.object-view.expander-container", 1498954941), Fh = new U(null, "href", "href", -793805698), Gh = new U(null, "img", "img", 1442687358), Hh = new U(null, "a", "a", -2123407586), 
-Ih = new U(null, "height", "height", 1025178622), Jh = new U(null, "span", "span", 1394872991), Kh = new U(null, "div.indent", "div.indent", -1749025025), Lh = new U(null, "margin", "margin", -995903681);
-var Mh = [{id:1111, last_name:"Denham", first_name:"Ariel"}, {id:1212, last_name:"Worsley", first_name:"John"}, {id:15990, last_name:"Bourgeois", first_name:"Paulette"}, {id:25041, last_name:"Bianco", first_name:"Margery Williams"}, {id:16, last_name:"Alcott", first_name:"Louisa May"}, {id:4156, last_name:"King", first_name:"Stephen"}, {id:1866, last_name:"Herbert", first_name:"Frank"}, {id:1644, last_name:"Hogarth", first_name:"Burne"}, {id:2031, last_name:"Brown", first_name:"Margaret Wise"}, {id:115, 
-last_name:"Poe", first_name:"Edgar Allen"}, {id:7805, last_name:"Lutz", first_name:"Mark"}, {id:7806, last_name:"Christiansen", first_name:"Tom"}, {id:1533, last_name:"Brautigan", first_name:"Richard"}, {id:1717, last_name:"Brite", first_name:"Poppy Z."}, {id:2112, last_name:"Gorey", first_name:"Edward"}, {id:2001, last_name:"Clarke", first_name:"Arthur C."}, {id:1213, last_name:"Brookins", first_name:"Andrew"}, {id:25043, last_name:"Simon", first_name:"Neil"}, {id:1809, last_name:"Geisel", first_name:"Theodor Seuss"}], 
-Nh = [{id:7808, title:"The Shining", author_id:4156, subject_id:9}, {id:4513, title:"Dune", author_id:1866, subject_id:15}, {id:4267, title:"2001: A Space Odyssey", author_id:2001, subject_id:15}, {id:1608, title:"The Cat in the Hat", author_id:1809, subject_id:2}, {id:1590, title:"Bartholomew and the Oobleck", author_id:1809, subject_id:2}, {id:1591, title:"One Fish, Two Fish, Red Fish, Blue Fish", author_id:1809, subject_id:2}, {id:1592, title:"Horton Hears a Who", author_id:1809, subject_id:2}, 
-{id:1593, title:"The Lorax", author_id:1809, subject_id:2}, {id:25908, title:"Franklin in the Dark", author_id:15990, subject_id:2}, {id:1501, title:"Goodnight Moon", author_id:2031, subject_id:2}, {id:190, title:"Little Women", author_id:16, subject_id:6}, {id:1234, title:"The Velveteen Rabbit", author_id:25041, subject_id:3}, {id:2038, title:"Dynamic Anatomy", author_id:1644, subject_id:0}, {id:156, title:"The Tell-Tale Heart", author_id:115, subject_id:9}, {id:41473, title:"Programming Python", 
-author_id:7805, subject_id:4}, {id:41477, title:"Learning Python", author_id:7805, subject_id:4}, {id:41478, title:"Perl Cookbook", author_id:7806, subject_id:4}, {id:41472, title:"Practical PostgreSQL", author_id:1212, subject_id:4}], Oh = [{id:0, subject:"Arts"}, {id:1, subject:"Business"}, {id:2, subject:"Children's Books"}, {id:3, subject:"Classics"}, {id:4, subject:"Computers"}, {id:5, subject:"Cooking"}, {id:6, subject:"Drama"}, {id:7, subject:"Entertainment"}, {id:8, subject:"History"}, {id:9, 
-subject:"Horror"}, {id:10, subject:"Mystery"}, {id:11, subject:"Poetry"}, {id:12, subject:"Religion"}, {id:13, subject:"Romance"}, {id:14, subject:"Science"}, {id:15, subject:"Science Fiction"}];
-var Ph;
-a: {
-  var Qh = ba.navigator;
-  if (Qh) {
-    var Rh = Qh.userAgent;
-    if (Rh) {
-      Ph = Rh;
-      break a;
-    }
-  }
-  Ph = "";
-}
-;function Sh(a, b) {
-  return new X(null, 7, 5, Y, [Sg, new n(null, 1, [bh, function() {
-    return qc.l(a, Fa);
-  }], null), "(", r(O.h ? O.h(a) : O.call(null, a)) ? "show" : "hide", " ", b, ")"], null);
-}
-;var Th, Uh = function Uh(b, c, d) {
-  if (b ? b.Tb : b) {
-    return b.Tb(0, c, d);
-  }
-  var e;
-  e = Uh[l(null == b ? null : b)];
-  if (!e && (e = Uh._, !e)) {
-    throw w("WritePort.put!", b);
-  }
-  return e.call(null, b, c, d);
-}, Vh = function Vh(b) {
-  if (b ? b.zb : b) {
-    return b.zb();
-  }
-  var c;
-  c = Vh[l(null == b ? null : b)];
-  if (!c && (c = Vh._, !c)) {
-    throw w("Channel.close!", b);
-  }
-  return c.call(null, b);
-}, Wh = function Wh(b) {
-  if (b ? b.hc : b) {
-    return !0;
-  }
-  var c;
-  c = Wh[l(null == b ? null : b)];
-  if (!c && (c = Wh._, !c)) {
-    throw w("Handler.active?", b);
-  }
-  return c.call(null, b);
-}, Xh = function Xh(b) {
-  if (b ? b.ic : b) {
-    return b.f;
-  }
-  var c;
-  c = Xh[l(null == b ? null : b)];
-  if (!c && (c = Xh._, !c)) {
-    throw w("Handler.commit", b);
-  }
-  return c.call(null, b);
-}, Yh = function Yh(b, c) {
-  if (b ? b.gc : b) {
-    return b.gc(0, c);
-  }
-  var d;
-  d = Yh[l(null == b ? null : b)];
-  if (!d && (d = Yh._, !d)) {
-    throw w("Buffer.add!*", b);
-  }
-  return d.call(null, b, c);
-}, Zh = function Zh() {
-  switch(arguments.length) {
-    case 1:
-      return Zh.h(arguments[0]);
-    case 2:
-      return Zh.l(arguments[0], arguments[1]);
-    default:
-      throw Error([x("Invalid arity: "), x(arguments.length)].join(""));;
-  }
-};
-Zh.h = function(a) {
-  return a;
-};
-Zh.l = function(a, b) {
-  if (null == b) {
-    throw Error([x("Assert failed: "), x(dg(R([Kd(new D(null, "not", "not", 1044554643, null), Kd(new D(null, "nil?", "nil?", 1612038930, null), new D(null, "itm", "itm", -713282527, null)))], 0)))].join(""));
-  }
-  return Yh(a, b);
-};
-Zh.J = 2;
-var $h, ai = function ai(b) {
-  "undefined" === typeof $h && ($h = function(b, d, e) {
-    this.Vb = b;
-    this.f = d;
-    this.Cc = e;
-    this.B = 393216;
-    this.H = 0;
-  }, $h.prototype.X = function(b, d) {
-    return new $h(this.Vb, this.f, d);
-  }, $h.prototype.T = function() {
-    return this.Cc;
-  }, $h.prototype.hc = function() {
-    return !0;
-  }, $h.prototype.ic = function() {
-    return this.f;
-  }, $h.Wb = function() {
-    return new X(null, 3, 5, Y, [new D(null, "fn-handler", "fn-handler", 648785851, null), new D(null, "f", "f", 43394975, null), new D(null, "meta17529", "meta17529", -733632008, null)], null);
-  }, $h.nb = !0, $h.mb = "cljs.core.async.impl.ioc-helpers/t17528", $h.Ab = function(b, d) {
-    return A(d, "cljs.core.async.impl.ioc-helpers/t17528");
-  });
-  return new $h(ai, b, gf);
-};
-function bi(a) {
-  try {
-    return a[0].call(null, a);
-  } catch (b) {
-    throw b instanceof Object && a[6].zb(), b;
-  }
-}
-function ci(a, b, c) {
-  c = c.jc(null, ai(function(c) {
-    a[2] = c;
-    a[1] = b;
-    return bi(a);
-  }));
-  return r(c) ? (a[2] = O.h ? O.h(c) : O.call(null, c), a[1] = b, Vg) : null;
-}
-function di(a, b) {
-  var c = a[6];
-  null != b && c.Tb(0, b, ai(function() {
-    return function() {
-      return null;
-    };
-  }(c)));
-  c.zb();
-  return c;
-}
-function ei(a) {
-  for (;;) {
-    var b = a[4], c = Wg.h(b), d = oh.h(b), e = a[5];
-    if (r(function() {
-      var a = e;
-      return r(a) ? Fa(b) : a;
-    }())) {
-      throw e;
-    }
-    if (r(function() {
-      var a = e;
-      return r(a) ? (a = c, r(a) ? e instanceof d : a) : a;
-    }())) {
-      a[1] = c;
-      a[2] = e;
-      a[5] = null;
-      a[4] = Yc.C(b, Wg, null, R([oh, null], 0));
-      break;
-    }
-    if (r(function() {
-      var a = e;
-      return r(a) ? Fa(c) && Fa(Jg.h(b)) : a;
-    }())) {
-      a[4] = sh.h(b);
-    } else {
-      if (r(function() {
-        var a = e;
-        return r(a) ? (a = Fa(c)) ? Jg.h(b) : a : a;
-      }())) {
-        a[1] = Jg.h(b);
-        a[4] = Yc.w(b, Jg, null);
-        break;
-      }
-      if (r(function() {
-        var a = Fa(e);
-        return a ? Jg.h(b) : a;
-      }())) {
-        a[1] = Jg.h(b);
-        a[4] = Yc.w(b, Jg, null);
-        break;
-      }
-      if (Fa(e) && Fa(Jg.h(b))) {
-        a[1] = uh.h(b);
-        a[4] = sh.h(b);
-        break;
-      }
-      throw Error("No matching clause");
-    }
-  }
-}
-;var fi;
-function gi() {
-  var a = ba.MessageChannel;
-  "undefined" === typeof a && "undefined" !== typeof window && window.postMessage && window.addEventListener && -1 == Ph.indexOf("Presto") && (a = function() {
-    var a = document.createElement("IFRAME");
-    a.style.display = "none";
-    a.src = "";
-    document.documentElement.appendChild(a);
-    var b = a.contentWindow, a = b.document;
-    a.open();
-    a.write("");
-    a.close();
-    var c = "callImmediate" + Math.random(), d = "file:" == b.location.protocol ? "*" : b.location.protocol + "//" + b.location.host, a = ha(function(a) {
-      if (("*" == d || a.origin == d) && a.data == c) {
-        this.port1.onmessage();
-      }
-    }, this);
-    b.addEventListener("message", a, !1);
-    this.port1 = {};
-    this.port2 = {postMessage:function() {
-      b.postMessage(c, d);
-    }};
-  });
-  if ("undefined" !== typeof a && -1 == Ph.indexOf("Edge") && -1 == Ph.indexOf("Trident") && -1 == Ph.indexOf("MSIE")) {
-    var b = new a, c = {}, d = c;
-    b.port1.onmessage = function() {
-      if (void 0 !== c.next) {
-        c = c.next;
-        var a = c.ac;
-        c.ac = null;
-        a();
-      }
-    };
-    return function(a) {
-      d.next = {ac:a};
-      d = d.next;
-      b.port2.postMessage(0);
-    };
-  }
-  return "undefined" !== typeof document && "onreadystatechange" in document.createElement("SCRIPT") ? function(a) {
-    var b = document.createElement("SCRIPT");
-    b.onreadystatechange = function() {
-      b.onreadystatechange = null;
-      b.parentNode.removeChild(b);
-      b = null;
-      a();
-      a = null;
-    };
-    document.documentElement.appendChild(b);
-  } : function(a) {
-    ba.setTimeout(a, 0);
-  };
-}
-;function hi(a, b, c, d, e) {
-  for (var f = 0;;) {
-    if (f < e) {
-      c[d + f] = a[b + f], f += 1;
-    } else {
-      break;
-    }
-  }
-}
-function ii(a, b, c, d) {
-  this.head = a;
-  this.tail = b;
-  this.length = c;
-  this.o = d;
-}
-ii.prototype.pop = function() {
-  if (0 === this.length) {
-    return null;
-  }
-  var a = this.o[this.tail];
-  this.o[this.tail] = null;
-  this.tail = (this.tail + 1) % this.o.length;
-  --this.length;
-  return a;
-};
-ii.prototype.unshift = function(a) {
-  this.o[this.head] = a;
-  this.head = (this.head + 1) % this.o.length;
-  this.length += 1;
-  return null;
-};
-function ji(a, b) {
-  a.length + 1 === a.o.length && a.resize();
-  a.unshift(b);
-}
-ii.prototype.resize = function() {
-  var a = Array(2 * this.o.length);
-  return this.tail < this.head ? (hi(this.o, this.tail, a, 0, this.length), this.tail = 0, this.head = this.length, this.o = a) : this.tail > this.head ? (hi(this.o, this.tail, a, 0, this.o.length - this.tail), hi(this.o, 0, a, this.o.length - this.tail, this.head), this.tail = 0, this.head = this.length, this.o = a) : this.tail === this.head ? (this.head = this.tail = 0, this.o = a) : null;
-};
-function ki(a, b) {
-  for (var c = a.length, d = 0;;) {
-    if (d < c) {
-      var e = a.pop(), f;
-      f = e;
-      f = b.h ? b.h(f) : b.call(null, f);
-      r(f) && a.unshift(e);
-      d += 1;
-    } else {
-      break;
-    }
-  }
-}
-function li(a) {
-  if (!(0 < a)) {
-    throw Error([x("Assert failed: "), x("Can't create a ring buffer of size 0"), x("\n"), x(dg(R([Kd(new D(null, "\x3e", "\x3e", 1085014381, null), new D(null, "n", "n", -2092305744, null), 0)], 0)))].join(""));
-  }
-  return new ii(0, 0, 0, Array(a));
-}
-function mi(a, b) {
-  this.L = a;
-  this.n = b;
-  this.B = 2;
-  this.H = 0;
-}
-function ni(a) {
-  return a.L.length === a.n;
-}
-mi.prototype.gc = function(a, b) {
-  ji(this.L, b);
-  return this;
-};
-mi.prototype.$ = function() {
-  return this.L.length;
-};
-var oi = li(32), pi = !1, qi = !1;
-function ri() {
-  pi = !0;
-  qi = !1;
-  for (var a = 0;;) {
-    var b = oi.pop();
-    if (null != b && (b.D ? b.D() : b.call(null), 1024 > a)) {
-      a += 1;
-      continue;
-    }
-    break;
-  }
-  pi = !1;
-  return 0 < oi.length ? si.D ? si.D() : si.call(null) : null;
-}
-function si() {
-  var a = qi;
-  if (r(r(a) ? pi : a)) {
-    return null;
-  }
-  qi = !0;
-  "function" != l(ba.setImmediate) || ba.Window && ba.Window.prototype && ba.Window.prototype.setImmediate == ba.setImmediate ? (fi || (fi = gi()), fi(ri)) : ba.setImmediate(ri);
-}
-function ti(a) {
-  ji(oi, a);
-  return si();
-}
-;var ui, vi = function vi(b) {
-  "undefined" === typeof ui && (ui = function(b, d, e) {
-    this.nc = b;
-    this.ca = d;
-    this.Dc = e;
-    this.B = 425984;
-    this.H = 0;
-  }, ui.prototype.X = function(b, d) {
-    return new ui(this.nc, this.ca, d);
-  }, ui.prototype.T = function() {
-    return this.Dc;
-  }, ui.prototype.Wa = function() {
-    return this.ca;
-  }, ui.Wb = function() {
-    return new X(null, 3, 5, Y, [new D(null, "box", "box", -1123515375, null), new D(null, "val", "val", 1769233139, null), new D(null, "meta17657", "meta17657", 1205473490, null)], null);
-  }, ui.nb = !0, ui.mb = "cljs.core.async.impl.channels/t17656", ui.Ab = function(b, d) {
-    return A(d, "cljs.core.async.impl.channels/t17656");
-  });
-  return new ui(vi, b, gf);
-};
-function wi(a, b) {
-  this.handler = a;
-  this.ca = b;
-}
-function xi(a) {
-  return Wh(a.handler);
-}
-var yi = function yi(b) {
-  if (b ? b.fc : b) {
-    return b.fc();
-  }
-  var c;
-  c = yi[l(null == b ? null : b)];
-  if (!c && (c = yi._, !c)) {
-    throw w("MMC.abort", b);
-  }
-  return c.call(null, b);
-};
-function zi(a, b, c, d, e, f, h) {
-  this.Ta = a;
-  this.Db = b;
-  this.Qa = c;
-  this.Cb = d;
-  this.L = e;
-  this.closed = f;
-  this.qa = h;
-}
-zi.prototype.fc = function() {
-  for (;;) {
-    var a = this.Qa.pop();
-    if (null != a) {
-      var b = a.handler;
-      ti(function(a) {
-        return function() {
-          return a.h ? a.h(!0) : a.call(null, !0);
-        };
-      }(b.f, b, a.ca, a, this));
-    }
-    break;
-  }
-  ki(this.Qa, je());
-  return Vh(this);
-};
-zi.prototype.Tb = function(a, b, c) {
-  var d = this;
-  if (null == b) {
-    throw Error([x("Assert failed: "), x("Can't put nil in on a channel"), x("\n"), x(dg(R([Kd(new D(null, "not", "not", 1044554643, null), Kd(new D(null, "nil?", "nil?", 1612038930, null), new D(null, "val", "val", 1769233139, null)))], 0)))].join(""));
-  }
-  if (a = d.closed) {
-    return vi(!a);
-  }
-  if (r(function() {
-    var a = d.L;
-    return r(a) ? Fa(ni(d.L)) : a;
-  }())) {
-    for (c = Ec(function() {
-      var a = d.L;
-      return d.qa.l ? d.qa.l(a, b) : d.qa.call(null, a, b);
-    }());;) {
-      if (0 < d.Ta.length && 0 < S(d.L)) {
-        var e = d.Ta.pop(), f = e.f, h = d.L.L.pop();
-        ti(function(a, b) {
-          return function() {
-            return a.h ? a.h(b) : a.call(null, b);
-          };
-        }(f, h, e, c, a, this));
-      }
-      break;
-    }
-    c && yi(this);
-    return vi(!0);
-  }
-  e = function() {
-    for (;;) {
-      var a = d.Ta.pop();
-      if (r(a)) {
-        if (r(!0)) {
-          return a;
-        }
-      } else {
-        return null;
-      }
-    }
-  }();
-  if (r(e)) {
-    return c = Xh(e), ti(function(a) {
-      return function() {
-        return a.h ? a.h(b) : a.call(null, b);
-      };
-    }(c, e, a, this)), vi(!0);
-  }
-  64 < d.Cb ? (d.Cb = 0, ki(d.Qa, xi)) : d.Cb += 1;
-  if (!(1024 > d.Qa.length)) {
-    throw Error([x("Assert failed: "), x([x("No more than "), x(1024), x(" pending puts are allowed on a single channel."), x(" Consider using a windowed buffer.")].join("")), x("\n"), x(dg(R([Kd(new D(null, "\x3c", "\x3c", 993667236, null), Kd(new D(null, ".-length", ".-length", -280799999, null), new D(null, "puts", "puts", -1883877054, null)), new D("impl", "MAX-QUEUE-SIZE", "impl/MAX-QUEUE-SIZE", 1508600732, null))], 0)))].join(""));
-  }
-  ji(d.Qa, new wi(c, b));
-  return null;
-};
-zi.prototype.jc = function(a, b) {
-  var c = this;
-  if (null != c.L && 0 < S(c.L)) {
-    for (var d = b.f, e = vi(c.L.L.pop());;) {
-      if (!r(ni(c.L))) {
-        var f = c.Qa.pop();
-        if (null != f) {
-          var h = f.handler, k = f.ca;
-          ti(function(a) {
-            return function() {
-              return a.h ? a.h(!0) : a.call(null, !0);
-            };
-          }(h.f, h, k, f, d, e, this));
-          Ec(function() {
-            var a = c.L, b = k;
-            return c.qa.l ? c.qa.l(a, b) : c.qa.call(null, a, b);
-          }()) && yi(this);
-          continue;
-        }
-      }
-      break;
-    }
-    return e;
-  }
-  d = function() {
-    for (;;) {
-      var a = c.Qa.pop();
-      if (r(a)) {
-        if (Wh(a.handler)) {
-          return a;
-        }
-      } else {
-        return null;
-      }
-    }
-  }();
-  if (r(d)) {
-    return e = Xh(d.handler), ti(function(a) {
-      return function() {
-        return a.h ? a.h(!0) : a.call(null, !0);
-      };
-    }(e, d, this)), vi(d.ca);
-  }
-  if (r(c.closed)) {
-    return r(c.L) && (d = c.L, c.qa.h ? c.qa.h(d) : c.qa.call(null, d)), r(r(!0) ? b.f : !0) ? (d = function() {
-      var a = c.L;
-      return r(a) ? 0 < S(c.L) : a;
-    }(), d = r(d) ? c.L.L.pop() : null, vi(d)) : null;
-  }
-  64 < c.Db ? (c.Db = 0, ki(c.Ta, Wh)) : c.Db += 1;
-  if (!(1024 > c.Ta.length)) {
-    throw Error([x("Assert failed: "), x([x("No more than "), x(1024), x(" pending takes are allowed on a single channel.")].join("")), x("\n"), x(dg(R([Kd(new D(null, "\x3c", "\x3c", 993667236, null), Kd(new D(null, ".-length", ".-length", -280799999, null), new D(null, "takes", "takes", 298247964, null)), new D("impl", "MAX-QUEUE-SIZE", "impl/MAX-QUEUE-SIZE", 1508600732, null))], 0)))].join(""));
-  }
-  ji(c.Ta, b);
-  return null;
-};
-zi.prototype.zb = function() {
-  var a = this;
-  if (!a.closed) {
-    a.closed = !0;
-    if (r(function() {
-      var b = a.L;
-      return r(b) ? 0 === a.Qa.length : b;
-    }())) {
-      var b = a.L;
-      a.qa.h ? a.qa.h(b) : a.qa.call(null, b);
-    }
-    for (;b = a.Ta.pop(), null != b;) {
-      var c = b.f, d = r(function() {
-        var b = a.L;
-        return r(b) ? 0 < S(a.L) : b;
-      }()) ? a.L.L.pop() : null;
-      ti(function(a, b) {
-        return function() {
-          return a.h ? a.h(b) : a.call(null, b);
-        };
-      }(c, d, b, this));
-    }
-  }
-  return null;
-};
-function Ai(a) {
-  console.log(a);
-  return null;
-}
-function Bi(a, b) {
-  var c = (r(null) ? null : Ai).call(null, b);
-  return null == c ? a : Zh.l(a, c);
-}
-function Ci(a) {
-  return new zi(li(32), 0, li(32), 0, a, !1, function() {
-    return function(a) {
-      return function() {
-        function c(c, d) {
-          try {
-            return a.l ? a.l(c, d) : a.call(null, c, d);
-          } catch (e) {
-            return Bi(c, e);
-          }
-        }
-        function d(c) {
-          try {
-            return a.h ? a.h(c) : a.call(null, c);
-          } catch (d) {
-            return Bi(c, d);
-          }
-        }
-        var e = null, e = function(a, b) {
-          switch(arguments.length) {
-            case 1:
-              return d.call(this, a);
-            case 2:
-              return c.call(this, a, b);
-          }
-          throw Error("Invalid arity: " + arguments.length);
-        };
-        e.h = d;
-        e.l = c;
-        return e;
-      }();
-    }(r(null) ? null.h ? null.h(Zh) : null.call(null, Zh) : Zh);
-  }());
-}
-;for (var Di = Array(1), Ei = 0;;) {
-  if (Ei < Di.length) {
-    Di[Ei] = null, Ei += 1;
-  } else {
-    break;
-  }
-}
-;function Fi(a) {
-  a = N.l(a, 0) ? null : a;
-  if (r(null) && !r(a)) {
-    throw Error([x("Assert failed: "), x("buffer must be supplied when transducer is"), x("\n"), x(dg(R([new D(null, "buf-or-n", "buf-or-n", -1646815050, null)], 0)))].join(""));
-  }
-  a = "number" === typeof a ? new mi(li(a), a) : a;
-  return Ci(a);
-}
-var Ii = function Gi(b) {
-  "undefined" === typeof Th && (Th = function(b, d, e) {
-    this.Vb = b;
-    this.f = d;
-    this.Bc = e;
-    this.B = 393216;
-    this.H = 0;
-  }, Th.prototype.X = function(b, d) {
-    return new Th(this.Vb, this.f, d);
-  }, Th.prototype.T = function() {
-    return this.Bc;
-  }, Th.prototype.hc = function() {
-    return !0;
-  }, Th.prototype.ic = function() {
-    return this.f;
-  }, Th.Wb = function() {
-    return new X(null, 3, 5, Y, [new D(null, "fn-handler", "fn-handler", 648785851, null), new D(null, "f", "f", 43394975, null), new D(null, "meta14822", "meta14822", -622561726, null)], null);
-  }, Th.nb = !0, Th.mb = "cljs.core.async/t14821", Th.Ab = function(b, d) {
-    return A(d, "cljs.core.async/t14821");
-  });
-  return new Th(Gi, b, gf);
-}(function() {
-  return null;
-});
-var Ji = new Knex({client:"websql", debug:!0, useNullAsDefault:!0}), Ki = new Knex({client:"websql", useNullAsDefault:!0});
-function Li() {
-  var a = Fi(null);
-  console.log = function(a) {
-    return function(c) {
-      c = Uh(a, new n(null, 2, [ih, c.sql, Lg, c.bindings], null), Ii);
-      return r(c) ? O.h ? O.h(c) : O.call(null, c) : !0;
-    };
-  }(a);
-  return a;
-}
-;var Mi;
-function Ni(a) {
-  var b = T(a, 0);
-  a = T(a, 1);
-  if (r(a)) {
-    throw a;
-  }
-  return b;
-}
-var Oi = function Oi(b) {
-  "undefined" === typeof Mi && (Mi = function(b, d, e) {
-    this.Fc = b;
-    this.promise = d;
-    this.Ec = e;
-    this.B = 393216;
-    this.H = 0;
-  }, Mi.prototype.X = function(b, d) {
-    return new Mi(this.Fc, this.promise, d);
-  }, Mi.prototype.T = function() {
-    return this.Ec;
-  }, Mi.prototype.jc = function(b, d) {
-    this.promise.then(function(b) {
-      return function(c) {
-        return ti(function() {
-          return function() {
-            return Xh(d).call(null, new X(null, 2, 5, Y, [c, null], null));
-          };
-        }(b));
-      };
-    }(this), function(b) {
-      return function(c) {
-        return ti(function() {
-          return function() {
-            return Xh(d).call(null, new X(null, 2, 5, Y, [null, c], null));
-          };
-        }(b));
-      };
-    }(this));
-    return null;
-  }, Mi.Wb = function() {
-    return new X(null, 3, 5, Y, [new D(null, "pair-port", "pair-port", 1268194861, null), new D(null, "promise", "promise", -887306482, null), new D(null, "meta23030", "meta23030", 969389769, null)], null);
-  }, Mi.nb = !0, Mi.mb = "cljs-promises.async/t23029", Mi.Ab = function(b, d) {
-    return A(d, "cljs-promises.async/t23029");
-  });
-  return new Mi(Oi, b, gf);
-};
-function Pi(a, b) {
-  return (Ki.h ? Ki.h(a) : Ki.call(null, a)).insert(b);
-}
-;var Qi = new Knex({client:"websql", useNullAsDefault:!0}), Ri = Qi.schema;
-window.Ac = Qi;
-function Si(a) {
-  a.increments("id").primary();
-  a.string("last_name");
-  return a.string("first_name");
-}
-function Ti(a) {
-  a.increments("id").primary();
-  a.string("title");
-  a.integer("author_id");
-  return a.integer("subject_id");
-}
-function Ui(a) {
-  a.increments("id").primary();
-  return a.string("subject");
-}
-function Vi() {
-  var a = [Ri.dropTableIfExists("authors"), Ri.dropTableIfExists("books"), Ri.dropTableIfExists("subjects")], b = [Ri.createTableIfNotExists("authors", Si), Ri.createTableIfNotExists("books", Ti), Ri.createTableIfNotExists("subjects", Ui)];
-  return Oi(Promise.all(a).then(function(a, b) {
-    return function() {
-      return Promise.all(b);
-    };
-  }(a, b)));
-}
-;var Wi, Xi = "undefined" !== typeof window && null != window.document;
-function Yi(a, b) {
+"code", "code", 1586293142), uh = new U(null, "continue-block", "continue-block", -1852047850), vh = new U(null, "div.hydration-display-sql", "div.hydration-display-sql", 2123688630), wh = new U(null, "div.instructions", "div.instructions", -526747560), xh = new U(null, "on-dispose", "on-dispose", 2105306360), yh = new U(null, "componentFunction", "componentFunction", 825866104), zh = new U(null, "div.example", "div.example", 265005017), Ah = new U(null, "div.sql-view-sql", "div.sql-view-sql", 496262137), 
+Bh = new U(null, "component-function", "component-function", 654728922), Ch = new U(null, "on-change", "on-change", -732046149), Dh = new U(null, "h3", "h3", 2067611163), ag = new U(null, "alt-impl", "alt-impl", 670969595), ng = new U(null, "keywordize-keys", "keywordize-keys", 1310784252), Eh = new U(null, "p", "p", 151049309), Fh = new U(null, "div.object-view.expander-container", "div.object-view.expander-container", 1498954941), Gh = new U(null, "href", "href", -793805698), Hh = new U(null, "img", 
+"img", 1442687358), Ih = new U(null, "a", "a", -2123407586), Jh = new U(null, "height", "height", 1025178622), Kh = new U(null, "span", "span", 1394872991), Lh = new U(null, "div.indent", "div.indent", -1749025025), Mh = new U(null, "margin", "margin", -995903681);
+var Nh, Oh = "undefined" !== typeof window && null != window.document;
+function Ph(a, b) {
   return a.cljsReactClass = b;
 }
-function Zi(a) {
+function Qh(a) {
   return function(b) {
     return function(c) {
       var d = Wc(O.h ? O.h(b) : O.call(null, b), c);
@@ -6801,11 +6092,11 @@ function Zi(a) {
     };
   }(ne ? ne(gf) : me.call(null, gf));
 }
-var $i = new Qf(null, new n(null, 2, ["aria", null, "data", null], null), null);
-function aj(a) {
+var Rh = new Qf(null, new n(null, 2, ["aria", null, "data", null], null), null);
+function Sh(a) {
   return 2 > S(a) ? a.toUpperCase() : [x(a.substring(0, 1).toUpperCase()), x(a.substring(1))].join("");
 }
-function bj(a) {
+function Th(a) {
   if ("string" === typeof a) {
     return a;
   }
@@ -6834,16 +6125,16 @@ function bj(a) {
       }
     }
   }
-  return r($i.h ? $i.h(c) : $i.call(null, c)) ? a : de(x, c, W.l(aj, d));
+  return r(Rh.h ? Rh.h(c) : Rh.call(null, c)) ? a : de(x, c, W.l(Sh, d));
 }
-function cj(a, b, c) {
+function Uh(a, b, c) {
   this.f = a;
   this.args = b;
   this.p = c;
   this.B = 6291457;
   this.H = 0;
 }
-g = cj.prototype;
+g = Uh.prototype;
 g.call = function() {
   function a(a, d) {
     a = this;
@@ -6901,23 +6192,23 @@ g.G = function(a, b) {
 g.R = function() {
   return mc(new X(null, 2, 5, Y, [this.f, this.args], null));
 };
-function dj(a) {
+function Vh(a) {
   var b = qd(a);
   return b ? b : a ? a.H & 256 || a.Nc ? !0 : a.H ? !1 : u(og, a) : u(og, a);
 }
-function ej(a) {
+function Wh(a) {
   return null == a ? null : 9 === a.nodeType ? a.documentElement : a.firstChild;
 }
-function fj(a) {
-  a = ej(a);
+function Xh(a) {
+  a = Wh(a);
   return null == a ? null : a.getAttribute("data-reactid");
 }
-var gj = ne ? ne(gf) : me.call(null, gf);
-function hj(a) {
+var Yh = ne ? ne(gf) : me.call(null, gf);
+function Zh(a) {
   var b = document.getElementById("app");
   return React.renderComponent(a.D ? a.D() : a.call(null), b, function() {
-    var c = fj(b);
-    null != c && qc.K(gj, Yc, c, function() {
+    var c = Xh(b);
+    null != c && qc.K(Yh, Yc, c, function() {
       return function() {
         var c;
         try {
@@ -6933,7 +6224,7 @@ function hj(a) {
                 throw f;
               }
             }
-            c = ej(b);
+            c = Wh(b);
             r(c) && (c.removeAttribute("data-reactid"), c.innerHTML = "");
           }
           throw e;
@@ -6944,11 +6235,11 @@ function hj(a) {
     return null;
   });
 }
-var ij = {};
-function jj(a, b) {
-  return Nd(a, b) || (a instanceof D || Ga(a) === cj) && N.l(a, b);
+var $h = {};
+function ai(a, b) {
+  return Nd(a, b) || (a instanceof D || Ga(a) === Uh) && N.l(a, b);
 }
-var kj = function kj(b, c) {
+var bi = function bi(b, c) {
   var d = b === c;
   if (d) {
     return d;
@@ -6960,14 +6251,14 @@ var kj = function kj(b, c) {
       var h = S(b) === S(c);
       return h ? Dd(function() {
         return function(b, d, e) {
-          var f = Xc(c, d, ij);
+          var f = Xc(c, d, $h);
           return r(function() {
             var b = e === f;
             if (b) {
               return b;
             }
-            b = jj(e, f);
-            return r(b) ? b : (b = Nd(d, dh)) ? kj(e, f) : b;
+            b = ai(e, f);
+            return r(b) ? b : (b = Nd(d, dh)) ? bi(e, f) : b;
           }()) ? b : new Dc(!1);
         };
       }(h, f, e, d), !0, b) : h;
@@ -6976,7 +6267,7 @@ var kj = function kj(b, c) {
   }
   return e;
 };
-function lj(a, b) {
+function ci(a, b) {
   if (!jd(a)) {
     throw Error([x("Assert failed: "), x(dg(R([Kd(new D(null, "vector?", "vector?", -61367869, null), new D(null, "v1", "v1", -2141311508, null))], 0)))].join(""));
   }
@@ -6996,36 +6287,36 @@ function lj(a, b) {
         if (a) {
           return a;
         }
-        a = jj(d, k);
-        return r(a) ? a : (a = id(d)) ? kj(d, k) : a;
+        a = ai(d, k);
+        return r(a) ? a : (a = id(d)) ? bi(d, k) : a;
       }()) ? a : new Dc(!1);
     };
   }(d, c), !0, a) : d;
 }
-;var mj, nj = ne ? ne(0) : me.call(null, 0);
-function oj(a, b) {
+;var di, ei = ne ? ne(0) : me.call(null, 0);
+function fi(a, b) {
   b.Bb = null;
-  var c = mj;
-  mj = b;
+  var c = di;
+  di = b;
   try {
     return a.D ? a.D() : a.call(null);
   } finally {
-    mj = c;
+    di = c;
   }
 }
-function pj(a) {
+function gi(a) {
   var b = a.Bb;
   a.Bb = null;
   return b;
 }
-function qj(a) {
-  var b = mj;
+function hi(a) {
+  var b = di;
   if (null != b) {
     var c = b.Bb;
     b.Bb = Qc.l(null == c ? Sf : c, a);
   }
 }
-function rj(a, b, c, d) {
+function ii(a, b, c, d) {
   this.state = a;
   this.meta = b;
   this.ab = c;
@@ -7033,12 +6324,12 @@ function rj(a, b, c, d) {
   this.H = 114690;
   this.B = 2153938944;
 }
-g = rj.prototype;
+g = ii.prototype;
 g.G = function(a, b) {
   return this === b;
 };
 g.Wa = function() {
-  qj(this);
+  hi(this);
   return this.state;
 };
 g.Nb = function(a, b) {
@@ -7094,75 +6385,75 @@ g.yb = function(a, b) {
 g.R = function() {
   return ca(this);
 };
-var sj = function sj() {
+var ji = function ji() {
   switch(arguments.length) {
     case 1:
-      return sj.h(arguments[0]);
+      return ji.h(arguments[0]);
     default:
-      return sj.C(arguments[0], new I(Array.prototype.slice.call(arguments, 1), 0));
+      return ji.C(arguments[0], new I(Array.prototype.slice.call(arguments, 1), 0));
   }
 };
-sj.h = function(a) {
-  return new rj(a, null, null, null);
+ji.h = function(a) {
+  return new ii(a, null, null, null);
 };
-sj.C = function(a, b) {
+ji.C = function(a, b) {
   var c = od(b) ? ce(oe, b) : b, d = Wc(c, za), c = Wc(c, pe);
-  return new rj(a, d, c, null);
+  return new ii(a, d, c, null);
 };
-sj.I = function(a) {
+ji.I = function(a) {
   var b = J(a);
   a = M(a);
-  return sj.C(b, a);
+  return ji.C(b, a);
 };
-sj.J = 1;
-var tj = function tj(b) {
+ji.J = 1;
+var ki = function ki(b) {
   if (b ? b.lc : b) {
     return b.lc();
   }
   var c;
-  c = tj[l(null == b ? null : b)];
-  if (!c && (c = tj._, !c)) {
+  c = ki[l(null == b ? null : b)];
+  if (!c && (c = ki._, !c)) {
     throw w("IDisposable.dispose!", b);
   }
   return c.call(null, b);
-}, uj = function uj(b) {
+}, li = function li(b) {
   if (b ? b.mc : b) {
     return b.mc();
   }
   var c;
-  c = uj[l(null == b ? null : b)];
-  if (!c && (c = uj._, !c)) {
+  c = li[l(null == b ? null : b)];
+  if (!c && (c = li._, !c)) {
     throw w("IRunnable.run", b);
   }
   return c.call(null, b);
-}, vj = function vj(b, c) {
+}, mi = function mi(b, c) {
   if (b ? b.Zb : b) {
     return b.Zb(0, c);
   }
   var d;
-  d = vj[l(null == b ? null : b)];
-  if (!d && (d = vj._, !d)) {
+  d = mi[l(null == b ? null : b)];
+  if (!d && (d = mi._, !d)) {
     throw w("IComputedImpl.-update-watching", b);
   }
   return d.call(null, b, c);
-}, wj = function wj(b, c, d, e) {
+}, ni = function ni(b, c, d, e) {
   if (b ? b.kc : b) {
     return b.kc(0, 0, d, e);
   }
   var f;
-  f = wj[l(null == b ? null : b)];
-  if (!f && (f = wj._, !f)) {
+  f = ni[l(null == b ? null : b)];
+  if (!f && (f = ni._, !f)) {
     throw w("IComputedImpl.-handle-change", b);
   }
   return f.call(null, b, c, d, e);
 };
-function xj(a, b, c, d) {
+function oi(a, b, c, d) {
   return Dd(function(b, f, h) {
     h.K ? h.K(f, a, c, d) : h.call(null, f, a, c, d);
     return null;
   }, null, b);
 }
-function yj(a, b, c, d, e, f, h, k, m) {
+function pi(a, b, c, d, e, f, h, k, m) {
   this.f = a;
   this.state = b;
   this.ob = c;
@@ -7175,7 +6466,7 @@ function yj(a, b, c, d, e, f, h, k, m) {
   this.B = 2153807872;
   this.H = 114690;
 }
-g = yj.prototype;
+g = pi.prototype;
 g.kc = function(a, b, c, d) {
   var e = this;
   return r(function() {
@@ -7183,18 +6474,18 @@ g.kc = function(a, b, c, d) {
     return r(a) ? Fa(e.ob) && c !== d : a;
   }()) ? (e.ob = !0, function() {
     var a = e.sb;
-    return r(a) ? a : uj;
+    return r(a) ? a : li;
   }().call(null, this)) : null;
 };
 g.Zb = function(a, b) {
   for (var c = G(b), d = null, e = 0, f = 0;;) {
     if (f < e) {
       var h = d.S(null, f);
-      rd(this.Ua, h) || Lb(h, this, wj);
+      rd(this.Ua, h) || Lb(h, this, ni);
       f += 1;
     } else {
       if (c = G(c)) {
-        d = c, kd(d) ? (c = Wb(d), f = Xb(d), d = c, e = S(c), c = f) : (c = J(d), rd(this.Ua, c) || Lb(c, this, wj), c = M(d), d = null, e = 0), f = 0;
+        d = c, kd(d) ? (c = Wb(d), f = Xb(d), d = c, e = S(c), c = f) : (c = J(d), rd(this.Ua, c) || Lb(c, this, ni), c = M(d), d = null, e = 0), f = 0;
       } else {
         break;
       }
@@ -7243,7 +6534,7 @@ g.lc = function() {
   this.Ua = Sf;
   this.state = null;
   this.ob = !0;
-  r(this.bb) && (r(!1) && qc.l(nj, Fd), this.bb = !1);
+  r(this.bb) && (r(!1) && qc.l(ei, Fd), this.bb = !1);
   return r(this.Eb) ? this.Eb.D ? this.Eb.D() : this.Eb.call(null) : null;
 };
 g.Nb = function(a, b) {
@@ -7272,52 +6563,52 @@ g.Rb = function(a, b, c, d, e) {
   return $b(this, ee(b, this.state, c, d, e));
 };
 g.mc = function() {
-  var a = this.state, b = oj(this.f, this), c = pj(this);
-  !N.l(c, this.Ua) && vj(this, c);
-  r(this.bb) || (r(!1) && qc.l(nj, sc), this.bb = !0);
+  var a = this.state, b = fi(this.f, this), c = gi(this);
+  !N.l(c, this.Ua) && mi(this, c);
+  r(this.bb) || (r(!1) && qc.l(ei, sc), this.bb = !0);
   this.ob = !1;
   this.state = b;
-  xj(this, this.Y, a, this.state);
+  oi(this, this.Y, a, this.state);
   return b;
 };
 g.xb = function(a, b, c) {
   r(this.Fb) && (this.Fb.l ? this.Fb.l(b, c) : this.Fb.call(null, b, c));
-  return xj(this, this.Y, b, c);
+  return oi(this, this.Y, b, c);
 };
 g.wb = function(a, b, c) {
   return this.Y = Yc.w(this.Y, b, c);
 };
 g.yb = function(a, b) {
   this.Y = $c.l(this.Y, b);
-  return fd(this.Y) ? tj(this) : null;
+  return fd(this.Y) ? ki(this) : null;
 };
 g.Wa = function() {
   var a = this;
   if (Fa(function() {
     var b = a.sb;
-    return r(b) ? b : mj;
+    return r(b) ? b : di;
   }())) {
-    var b = new X(null, 2, 5, Y, [a.sb, mj], null);
+    var b = new X(null, 2, 5, Y, [a.sb, di], null);
     "undefined" !== typeof console && console.log("" + x([x("dbg "), x("reagent.ratom"), x(":"), x(231), x(": "), x("[auto-run *ratom-context*]"), x(": "), x(dg(R([b], 0)))].join("")));
   }
   if (!r(function() {
     var b = a.sb;
-    return r(b) ? b : mj;
+    return r(b) ? b : di;
   }())) {
     throw Error([x("Assert failed: "), x("Reaction derefed outside auto-running context"), x("\n"), x(dg(R([Kd(new D(null, "or", "or", 1876275696, null), new D(null, "auto-run", "auto-run", -696035332, null), new D(null, "*ratom-context*", "*ratom-context*", -1557728360, null))], 0)))].join(""));
   }
-  qj(this);
-  return r(a.ob) ? uj(this) : a.state;
+  hi(this);
+  return r(a.ob) ? li(this) : a.state;
 };
-function zj(a, b) {
-  var c = od(b) ? ce(oe, b) : b, d = Wc(c, qh), e = Wc(c, rg), f = Wc(c, wh), c = Wc(c, Fg), d = N.l(d, !0) ? uj : d, h = null != c, e = new yj(a, null, !h, h, null, gf, d, e, f);
-  null != c && (r(!1) && qc.l(nj, sc), e.Zb(0, c));
+function qi(a, b) {
+  var c = od(b) ? ce(oe, b) : b, d = Wc(c, qh), e = Wc(c, rg), f = Wc(c, xh), c = Wc(c, Fg), d = N.l(d, !0) ? li : d, h = null != c, e = new pi(a, null, !h, h, null, gf, d, e, f);
+  null != c && (r(!1) && qc.l(ei, sc), e.Zb(0, c));
   return e;
 }
-;function Aj(a) {
+;function ri(a) {
   return setTimeout(a, 16);
 }
-var Bj = Fa(Xi) ? Aj : function() {
+var si = Fa(Oh) ? ri : function() {
   var a = window, b = a.requestAnimationFrame;
   if (r(b)) {
     return b;
@@ -7331,13 +6622,13 @@ var Bj = Fa(Xi) ? Aj : function() {
     return b;
   }
   a = a.msRequestAnimationFrame;
-  return r(a) ? a : Aj;
+  return r(a) ? a : ri;
 }();
-function Cj(a, b) {
+function ti(a, b) {
   return a.props.level - b.props.level;
 }
-function Dj() {
-  var a = Ej;
+function ui() {
+  var a = vi;
   if (r(a.$b)) {
     return null;
   }
@@ -7348,7 +6639,7 @@ function Dj() {
       a.Yb = [];
       a.$b = !1;
       a: {
-        c.sort(Cj);
+        c.sort(ti);
         for (var d = c.length, e = 0;;) {
           if (e < d) {
             var f = c[e];
@@ -7362,50 +6653,50 @@ function Dj() {
       return null;
     };
   }(a);
-  return Bj.h ? Bj.h(a) : Bj.call(null, a);
+  return si.h ? si.h(a) : si.call(null, a);
 }
-var Ej = new function() {
+var vi = new function() {
   this.Yb = [];
   this.$b = !1;
 };
-function Fj(a) {
+function wi(a) {
   a.cljsIsDirty = !0;
-  Ej.Yb.push(a);
-  return Dj();
+  vi.Yb.push(a);
+  return ui();
 }
-function Gj(a) {
+function xi(a) {
   a = null == a ? null : a.props;
   return null == a ? null : a.argv;
 }
-function Hj(a, b) {
-  if (!r(Gj(a))) {
+function yi(a, b) {
+  if (!r(xi(a))) {
     throw Error([x("Assert failed: "), x(dg(R([Kd(new D(null, "is-reagent-component", "is-reagent-component", -1856228005, null), new D(null, "c", "c", -122660552, null))], 0)))].join(""));
   }
   a.cljsIsDirty = !1;
   var c = a.cljsRatom;
   if (null == c) {
-    var d = oj(b, a), e = pj(a);
-    null != e && (a.cljsRatom = zj(b, R([qh, function() {
+    var d = fi(b, a), e = gi(a);
+    null != e && (a.cljsRatom = qi(b, R([qh, function() {
       return function() {
-        return Fj(a);
+        return wi(a);
       };
     }(d, e, c), Fg, e], 0)));
     return d;
   }
-  return uj(c);
+  return li(c);
 }
-function Ij(a) {
+function zi(a) {
   var b = a.cljsRatom;
-  null == b || tj(b);
+  null == b || ki(b);
   return a.cljsIsDirty = !1;
 }
-;function Jj(a) {
+;function Ai(a) {
   var b = a.cljsState;
-  return null != b ? b : a.cljsState = sj.h(null);
+  return null != b ? b : a.cljsState = ji.h(null);
 }
-var Kj = function Kj(b) {
+var Bi = function Bi(b) {
   var c = b.cljsRender;
-  if (!r(dj(c))) {
+  if (!r(Vh(c))) {
     throw Error([x("Assert failed: "), x(dg(R([Kd(new D("util", "clj-ifn?", "util/clj-ifn?", 259370460, null), new D(null, "f", "f", 43394975, null))], 0)))].join(""));
   }
   var d = b.props, e = null == b.componentFunction ? c.h ? c.h(b) : c.call(null, b) : function() {
@@ -7428,9 +6719,9 @@ var Kj = function Kj(b) {
         return ce(c, Ne(b, 1, S(b)));
     }
   }();
-  return jd(e) ? b.asComponent(e, d.level) : qd(e) ? (b.cljsRender = e, Kj(b)) : e;
+  return jd(e) ? b.asComponent(e, d.level) : qd(e) ? (b.cljsRender = e, Bi(b)) : e;
 };
-function Lj(a, b) {
+function Ci(a, b) {
   var c = a instanceof U ? a.ta : null;
   switch(c) {
     case "getDefaultProps":
@@ -7439,7 +6730,7 @@ function Lj(a, b) {
       return function() {
         return function() {
           var a = b.h ? b.h(this) : b.call(null, this);
-          return qc.w(Jj(this), Pf, a);
+          return qc.w(Ai(this), Pf, a);
         };
       }(c);
     case "componentWillReceiveProps":
@@ -7452,13 +6743,13 @@ function Lj(a, b) {
     case "shouldComponentUpdate":
       return function() {
         return function(a) {
-          var c = Wi;
+          var c = Nh;
           if (r(c)) {
             return c;
           }
           c = this.props.argv;
           a = a.argv;
-          return null == b ? Fa(lj(c, a)) : b.w ? b.w(this, c, a) : b.call(null, this, c, a);
+          return null == b ? Fa(ci(c, a)) : b.w ? b.w(this, c, a) : b.call(null, this, c, a);
         };
       }(c);
     case "componentWillUpdate":
@@ -7478,7 +6769,7 @@ function Lj(a, b) {
     case "componentWillUnmount":
       return function() {
         return function() {
-          Ij(this);
+          zi(this);
           return null == b ? null : b.h ? b.h(this) : b.call(null, this);
         };
       }(c);
@@ -7486,7 +6777,7 @@ function Lj(a, b) {
       return null;
   }
 }
-function Mj(a) {
+function Di(a) {
   return qd(a) ? function() {
     function b(b) {
       var c = null;
@@ -7510,47 +6801,47 @@ function Mj(a) {
     return b;
   }() : a;
 }
-var Nj = new Qf(null, new n(null, 3, [Ig, null, hh, null, xh, null], null), null);
-function Oj(a) {
+var Ei = new Qf(null, new n(null, 3, [Ig, null, hh, null, yh, null], null), null);
+function Fi(a) {
   qd(a) && (a.__reactDontBind = !0);
   return a;
 }
-function Pj(a, b, c) {
-  if (r(Nj.h ? Nj.h(a) : Nj.call(null, a))) {
-    return Oj(b);
+function Hi(a, b, c) {
+  if (r(Ei.h ? Ei.h(a) : Ei.call(null, a))) {
+    return Fi(b);
   }
-  var d = Lj(a, b);
+  var d = Ci(a, b);
   if (r(r(d) ? b : d) && !qd(b)) {
     throw Error([x("Assert failed: "), x([x("Expected function in "), x(c), x(a), x(" but got "), x(b)].join("")), x("\n"), x(dg(R([Kd(new D(null, "ifn?", "ifn?", -2106461064, null), new D(null, "f", "f", 43394975, null))], 0)))].join(""));
   }
-  return r(d) ? d : Mj(b);
+  return r(d) ? d : Di(b);
 }
-var Qj = new n(null, 2, [ch, null, Zg, null], null), Rj = Zi(bj);
-function Sj(a) {
+var Ii = new n(null, 2, [ch, null, Zg, null], null), Ji = Qh(Th);
+function Ki(a) {
   return Dd(function(a, c, d) {
-    return Yc.w(a, Od.h(Rj.h ? Rj.h(c) : Rj.call(null, c)), d);
+    return Yc.w(a, Od.h(Ji.h ? Ji.h(c) : Ji.call(null, c)), d);
   }, gf, a);
 }
-function Tj(a) {
-  return Pf.C(R([Qj, a], 0));
+function Li(a) {
+  return Pf.C(R([Ii, a], 0));
 }
-function Uj(a, b) {
-  return Yc.C(a, Ig, b, R([hh, r(Xi) ? function() {
-    return Hj(this, function(a) {
+function Mi(a, b) {
+  return Yc.C(a, Ig, b, R([hh, r(Oh) ? function() {
+    return yi(this, function(a) {
       return function() {
-        return Kj(a);
+        return Bi(a);
       };
     }(this));
   } : function() {
-    return Kj(this);
+    return Bi(this);
   }], 0));
 }
-function Vj(a) {
+function Ni(a) {
   var b = function() {
-    var b = xh.h(a);
+    var b = yh.h(a);
     return r(b) ? b : hh.h(a);
   }();
-  if (!r(dj(b))) {
+  if (!r(Vh(b))) {
     throw Error([x("Assert failed: "), x([x("Render must be a function, not "), x(dg(R([b], 0)))].join("")), x("\n"), x(dg(R([Kd(new D("util", "clj-ifn?", "util/clj-ifn?", 259370460, null), new D(null, "render-fun", "render-fun", -1209513086, null))], 0)))].join(""));
   }
   var c = null, d = function() {
@@ -7570,25 +6861,25 @@ function Vj(a) {
   } else {
     e = d;
   }
-  f = Uj(Yc.w(a, Hg, e), b);
+  f = Mi(Yc.w(a, Hg, e), b);
   return Dd(function(a, b, c, d) {
     return function(a, b, c) {
-      return Yc.w(a, b, Pj(b, c, d));
+      return Yc.w(a, b, Hi(b, c, d));
     };
   }(b, c, d, e, f), gf, f);
 }
-function Wj(a) {
+function Oi(a) {
   return Dd(function(a, c, d) {
     a[Pd(c)] = d;
     return a;
   }, {}, a);
 }
-function Xj(a) {
-  var b = Yj;
+function Pi(a) {
+  var b = Qi;
   if (!id(a)) {
     throw Error([x("Assert failed: "), x(dg(R([Kd(new D(null, "map?", "map?", -1780568534, null), new D(null, "body", "body", -408674142, null))], 0)))].join(""));
   }
-  var c = Wj(Vj(Tj(Sj(a)))), d = c.asComponent = Oj(b);
+  var c = Oi(Ni(Li(Ki(a)))), d = c.asComponent = Fi(b);
   a = React.createClass(c);
   c = function(a, c, d) {
     return function() {
@@ -7615,15 +6906,15 @@ function Xj(a) {
       return a;
     }();
   }(c, d, a);
-  Yi(c, a);
-  Yi(a, a);
+  Ph(c, a);
+  Ph(a, a);
   return c;
 }
-;var Zj = /([^\s\.#]+)(?:#([^\s\.#]+))?(?:\.([^\s#]+))?/, ak = new n(null, 3, [mh, "className", gh, "htmlFor", ah, "charSet"], null);
-function bk(a) {
+;var Ri = /([^\s\.#]+)(?:#([^\s\.#]+))?(?:\.([^\s#]+))?/, Si = new n(null, 3, [mh, "className", gh, "htmlFor", ah, "charSet"], null);
+function Ti(a) {
   return a instanceof U || a instanceof D || "string" === typeof a;
 }
-function ck(a) {
+function Ui(a) {
   return "string" === typeof a ? a : "number" === typeof a ? a : a instanceof U ? Pd(a) : a instanceof D ? "" + x(a) : gd(a) ? ig(a) : qd(a) ? function() {
     function b(a) {
       var b = null;
@@ -7647,23 +6938,23 @@ function ck(a) {
     return b;
   }() : a;
 }
-var dk = Zi(function(a) {
-  var b = ak.h ? ak.h(a) : ak.call(null, a);
-  return r(b) ? b : bj(a);
+var Vi = Qh(function(a) {
+  var b = Si.h ? Si.h(a) : Si.call(null, a);
+  return r(b) ? b : Th(a);
 });
-Zi(bj);
-function ek(a) {
+Qh(Th);
+function Wi(a) {
   return "string" === typeof a ? a : "number" === typeof a ? a : id(a) ? Dd(function(a, c, d) {
-    a[dk.h ? dk.h(c) : dk.call(null, c)] = ck(d);
+    a[Vi.h ? Vi.h(c) : Vi.call(null, c)] = Ui(d);
     return a;
-  }, {}, a) : ck(a);
+  }, {}, a) : Ui(a);
 }
-function fk(a, b) {
+function Xi(a, b) {
   var c = T(b, 0), d = T(b, 1), e = a.id;
   a.id = null != e ? e : c;
   null != d && (c = a.className, a.className = null != c ? [x(d), x(" "), x(c)].join("") : d);
 }
-function gk(a, b) {
+function Yi(a, b) {
   if (fd(a) && null == b) {
     return null;
   }
@@ -7671,14 +6962,14 @@ function gk(a, b) {
     return a;
   }
   var c = Dd(function(a, b, c) {
-    b = dk.h ? dk.h(b) : dk.call(null, b);
-    "key" !== b && (a[b] = ek(c));
+    b = Vi.h ? Vi.h(b) : Vi.call(null, b);
+    "key" !== b && (a[b] = Wi(c));
     return a;
   }, {}, a);
-  null != b && fk(c, b);
+  null != b && Xi(c, b);
   return c;
 }
-function hk(a, b) {
+function Zi(a, b) {
   var c = b.onChange, d = null == c ? null : b.value;
   a.cljsInputValue = d;
   if (null == d) {
@@ -7690,17 +6981,17 @@ function hk(a, b) {
   b.onChange = function(b, c) {
     return function(b) {
       b = c.h ? c.h(b) : c.call(null, b);
-      Fj(a);
+      wi(a);
       return b;
     };
   }(b, c, d);
   return b;
 }
-function ik(a) {
+function $i(a) {
   var b = React.DOM;
   return a === b.input || a === b.textarea;
 }
-function jk(a) {
+function aj(a) {
   a.componentDidUpdate = function() {
     return function() {
       var a;
@@ -7716,33 +7007,33 @@ function jk(a) {
   }(a);
   a.componentWillUnmount = function() {
     return function() {
-      return Ij(this);
+      return zi(this);
     };
   }(a);
 }
-function kk(a, b, c) {
-  var d = ik(a), e = r(d) ? hk : null;
+function bj(a, b, c) {
+  var d = $i(a), e = r(d) ? Zi : null;
   c = {render:function(c, d) {
     return function() {
-      var c = this.props, e = c.argv, f = T(e, 1), q = null == f || id(f), t = q ? 2 : 1, c = c.level + 1, e = lk.w ? lk.w(e, t, c) : lk.call(null, e, t, c), f = gk(q ? f : null, b);
+      var c = this.props, e = c.argv, f = T(e, 1), q = null == f || id(f), t = q ? 2 : 1, c = c.level + 1, e = cj.w ? cj.w(e, t, c) : cj.call(null, e, t, c), f = Yi(q ? f : null, b);
       null != d && (d.l ? d.l(this, f) : d.call(null, this, f));
       e[0] = f;
       return a.apply(null, e);
     };
   }(d, e), shouldComponentUpdate:function() {
     return function(a) {
-      var b = Wi;
-      return r(b) ? b : Fa(lj(this.props.argv, a.argv));
+      var b = Nh;
+      return r(b) ? b : Fa(ci(this.props.argv, a.argv));
     };
   }(d, e), displayName:r(c) ? c : "ComponentWrapper"};
-  r(d) && jk(c);
+  r(d) && aj(c);
   return React.createClass(c);
 }
-var mk = Zi(function(a) {
+var dj = Qh(function(a) {
   var b, c;
   c = Pd(a);
   if ("string" === typeof c) {
-    b = Zj.exec(c), c = N.l(J(b), c) ? 1 === S(b) ? J(b) : Ke(b) : null;
+    b = Ri.exec(c), c = N.l(J(b), c) ? 1 === S(b) ? J(b) : Ke(b) : null;
   } else {
     throw new TypeError("re-matches must match against a string.");
   }
@@ -7771,92 +7062,92 @@ var mk = Zi(function(a) {
   b = new X(null, 2, 5, Y, [b, r(r(c) ? c : d) ? new X(null, 2, 5, Y, [c, d], null) : null], null);
   c = T(b, 0);
   b = T(b, 1);
-  return kk(c, b, "" + x(a));
+  return bj(c, b, "" + x(a));
 });
-function nk(a) {
+function ej(a) {
   return id(a) ? Wc(a, Cg) : null;
 }
-function ok(a, b) {
+function fj(a, b) {
   if (!(0 < S(a))) {
     throw Error([x("Assert failed: "), x("Hiccup form should not be empty"), x("\n"), x(dg(R([Kd(new D(null, "pos?", "pos?", -244377722, null), Kd(new D(null, "count", "count", -514511684, null), new D(null, "v", "v", 1661996586, null)))], 0)))].join(""));
   }
   var c;
   c = Vc(a, 0);
-  var d = bk(c);
-  c = r(d) ? d : dj(c);
+  var d = Ti(c);
+  c = r(d) ? d : Vh(c);
   if (!r(c)) {
     throw Error([x("Assert failed: "), x([x("Invalid Hiccup form: "), x(dg(R([a], 0)))].join("")), x("\n"), x(dg(R([Kd(new D(null, "valid-tag?", "valid-tag?", 1243064160, null), Kd(new D(null, "nth", "nth", 1529209554, null), new D(null, "v", "v", 1661996586, null), 0))], 0)))].join(""));
   }
   c = Vc(a, 0);
-  r(bk(c)) ? c = mk.h ? mk.h(c) : mk.call(null, c) : (d = c.cljsReactClass, null != d ? c = d : r(React.isValidClass(c)) ? c = Yi(c, kk(c, null, null)) : (d = ed(c), d = Yc.w(d, Ah, c), d = (pk.h ? pk.h(d) : pk.call(null, d)).cljsReactClass, Yi(c, d), c = d));
-  var d = {argv:a, level:b}, e = nk(ed(a)), e = null == e ? nk(T(a, 1)) : e;
+  r(Ti(c)) ? c = dj.h ? dj.h(c) : dj.call(null, c) : (d = c.cljsReactClass, null != d ? c = d : r(React.isValidClass(c)) ? c = Ph(c, bj(c, null, null)) : (d = ed(c), d = Yc.w(d, Bh, c), d = (gj.h ? gj.h(d) : gj.call(null, d)).cljsReactClass, Ph(c, d), c = d));
+  var d = {argv:a, level:b}, e = ej(ed(a)), e = null == e ? ej(T(a, 1)) : e;
   null != e && (d.key = e);
   return c.h ? c.h(d) : c.call(null, d);
 }
-var qk = {}, Yj = function Yj() {
+var hj = {}, Qi = function Qi() {
   switch(arguments.length) {
     case 1:
-      return Yj.h(arguments[0]);
+      return Qi.h(arguments[0]);
     case 2:
-      return Yj.l(arguments[0], arguments[1]);
+      return Qi.l(arguments[0], arguments[1]);
     default:
       throw Error([x("Invalid arity: "), x(arguments.length)].join(""));;
   }
 };
-Yj.h = function(a) {
-  return Yj.l(a, 0);
+Qi.h = function(a) {
+  return Qi.l(a, 0);
 };
-Yj.l = function(a, b) {
+Qi.l = function(a, b) {
   if ("string" === typeof a) {
     return a;
   }
   if (jd(a)) {
-    return ok(a, b);
+    return fj(a, b);
   }
   if (od(a)) {
-    if (null != mj) {
-      return rk.l ? rk.l(a, b) : rk.call(null, a, b);
+    if (null != di) {
+      return ij.l ? ij.l(a, b) : ij.call(null, a, b);
     }
-    var c = oj(function() {
-      return rk.l ? rk.l(a, b) : rk.call(null, a, b);
-    }, qk);
-    r(pj(qk)) && (r(qk.warned) || ("undefined" !== typeof console && console.log("Warning: Reactive deref not supported in seq in ", dg(R([a], 0))), qk.warned = !0));
+    var c = fi(function() {
+      return ij.l ? ij.l(a, b) : ij.call(null, a, b);
+    }, hj);
+    r(gi(hj)) && (r(hj.warned) || ("undefined" !== typeof console && console.log("Warning: Reactive deref not supported in seq in ", dg(R([a], 0))), hj.warned = !0));
     return c;
   }
   return a;
 };
-Yj.J = 2;
-function pk(a) {
-  return Xj(a);
+Qi.J = 2;
+function gj(a) {
+  return Pi(a);
 }
-function rk(a, b) {
+function ij(a, b) {
   for (var c = Na(a), d = b + 1, e = c.length, f = 0;;) {
     if (f < e) {
-      c[f] = Yj.l(c[f], d), f += 1;
+      c[f] = Qi.l(c[f], d), f += 1;
     } else {
       break;
     }
   }
   return c;
 }
-function lk(a, b, c) {
-  return S(a) === b + 1 ? [null, Yj.l(Vc(a, b), c)] : Dd(function(a, e, f) {
-    e >= b && a.push(Yj.l(f, c));
+function cj(a, b, c) {
+  return S(a) === b + 1 ? [null, Qi.l(Vc(a, b), c)] : Dd(function(a, e, f) {
+    e >= b && a.push(Qi.l(f, c));
     return a;
   }, [null], a);
 }
-;function sk() {
-  var a = new X(null, 1, 5, Y, [tk], null);
-  return hj(function() {
+;function jj() {
+  var a = new X(null, 1, 5, Y, [kj], null);
+  return Zh(function() {
     var b = ad(a) ? a.D ? a.D() : a.call(null) : a;
-    return Yj.h(b);
+    return Qi.h(b);
   });
 }
-function uk() {
-  var a = Wi;
-  Wi = !0;
+function lj() {
+  var a = Nh;
+  Nh = !0;
   try {
-    for (var b = G(df(O.h ? O.h(gj) : O.call(null, gj))), c = null, d = 0, e = 0;;) {
+    for (var b = G(df(O.h ? O.h(Yh) : O.call(null, Yh))), c = null, d = 0, e = 0;;) {
       if (e < d) {
         var f = c.S(null, e);
         f.D ? f.D() : f.call(null);
@@ -7881,46 +7172,746 @@ function uk() {
       }
     }
   } finally {
-    Wi = a;
+    Nh = a;
   }
   return "Updated";
 }
-var vk = ["reagent", "core", "force_update_all"], wk = ba;
-vk[0] in wk || !wk.execScript || wk.execScript("var " + vk[0]);
-for (var xk;vk.length && (xk = vk.shift());) {
-  vk.length || void 0 === uk ? wk = wk[xk] ? wk[xk] : wk[xk] = {} : wk[xk] = uk;
+var mj = ["reagent", "core", "force_update_all"], nj = ba;
+mj[0] in nj || !nj.execScript || nj.execScript("var " + mj[0]);
+for (var oj;mj.length && (oj = mj.shift());) {
+  mj.length || void 0 === lj ? nj = nj[oj] ? nj[oj] : nj[oj] = {} : nj[oj] = lj;
 }
-;function yk() {
+;function pj(a, b) {
+  return new X(null, 7, 5, Y, [Sg, new n(null, 1, [bh, function() {
+    return qc.l(a, Fa);
+  }], null), "(", r(O.h ? O.h(a) : O.call(null, a)) ? "show" : "hide", " ", b, ")"], null);
+}
+;function qj() {
   return function(a) {
     return function() {
-      return new X(null, 4, 5, Y, [Rg, r(O.h ? O.h(a) : O.call(null, a)) ? new n(null, 1, [mh, "collapsed"], null) : null, r(O.h ? O.h(a) : O.call(null, a)) ? null : new X(null, 3, 5, Y, [fh, new X(null, 2, 5, Y, [Dh, "Here's the tiny database we're playing with"], null), new X(null, 2, 5, Y, [Gh, new n(null, 1, [Xg, "img/schema.svg"], null)], null)], null), new X(null, 3, 5, Y, [Sh, a, "schema"], null)], null);
+      return new X(null, 4, 5, Y, [Rg, r(O.h ? O.h(a) : O.call(null, a)) ? new n(null, 1, [mh, "collapsed"], null) : null, r(O.h ? O.h(a) : O.call(null, a)) ? null : new X(null, 3, 5, Y, [fh, new X(null, 2, 5, Y, [Eh, "Here's the tiny database we're playing with"], null), new X(null, 2, 5, Y, [Hh, new n(null, 1, [Xg, "img/schema.svg"], null)], null)], null), new X(null, 3, 5, Y, [pj, a, "schema"], null)], null);
     };
-  }(sj.h(!1));
+  }(ji.h(!1));
 }
-;function zk() {
+;function rj() {
   return function(a) {
     return function() {
-      return r(O.h ? O.h(a) : O.call(null, a)) ? null : new X(null, 2, 5, Y, [rh, new X(null, 4, 5, Y, [Dh, new X(null, 3, 5, Y, [Hh, new n(null, 1, [Fh, "http://knexjs.org"], null), "Knex"], null), " is a SQL query builder for Node.js. This page lets you play with Knex and see the results. ", new X(null, 3, 5, Y, [Hh, new n(null, 2, [Fh, "#", bh, function(a) {
+      return r(O.h ? O.h(a) : O.call(null, a)) ? null : new X(null, 2, 5, Y, [rh, new X(null, 4, 5, Y, [Eh, new X(null, 3, 5, Y, [Ih, new n(null, 1, [Gh, "http://knexjs.org"], null), "Knex"], null), " is a SQL query builder for Node.js. This page lets you play with Knex and see the results. ", new X(null, 3, 5, Y, [Ih, new n(null, 2, [Gh, "#", bh, function(a) {
         return function() {
           return V.l ? V.l(a, !0) : V.call(null, a, !0);
         };
       }(a)], null), "got it!"], null)], null)], null);
     };
-  }(sj.h(!1));
+  }(ji.h(!1));
 }
-;function Ak(a) {
-  window.knex = Ji;
+;var sj, tj = function tj(b, c, d) {
+  if (b ? b.Tb : b) {
+    return b.Tb(0, c, d);
+  }
+  var e;
+  e = tj[l(null == b ? null : b)];
+  if (!e && (e = tj._, !e)) {
+    throw w("WritePort.put!", b);
+  }
+  return e.call(null, b, c, d);
+}, uj = function uj(b) {
+  if (b ? b.zb : b) {
+    return b.zb();
+  }
+  var c;
+  c = uj[l(null == b ? null : b)];
+  if (!c && (c = uj._, !c)) {
+    throw w("Channel.close!", b);
+  }
+  return c.call(null, b);
+}, vj = function vj(b) {
+  if (b ? b.hc : b) {
+    return !0;
+  }
+  var c;
+  c = vj[l(null == b ? null : b)];
+  if (!c && (c = vj._, !c)) {
+    throw w("Handler.active?", b);
+  }
+  return c.call(null, b);
+}, wj = function wj(b) {
+  if (b ? b.ic : b) {
+    return b.f;
+  }
+  var c;
+  c = wj[l(null == b ? null : b)];
+  if (!c && (c = wj._, !c)) {
+    throw w("Handler.commit", b);
+  }
+  return c.call(null, b);
+}, xj = function xj(b, c) {
+  if (b ? b.gc : b) {
+    return b.gc(0, c);
+  }
+  var d;
+  d = xj[l(null == b ? null : b)];
+  if (!d && (d = xj._, !d)) {
+    throw w("Buffer.add!*", b);
+  }
+  return d.call(null, b, c);
+}, yj = function yj() {
+  switch(arguments.length) {
+    case 1:
+      return yj.h(arguments[0]);
+    case 2:
+      return yj.l(arguments[0], arguments[1]);
+    default:
+      throw Error([x("Invalid arity: "), x(arguments.length)].join(""));;
+  }
+};
+yj.h = function(a) {
+  return a;
+};
+yj.l = function(a, b) {
+  if (null == b) {
+    throw Error([x("Assert failed: "), x(dg(R([Kd(new D(null, "not", "not", 1044554643, null), Kd(new D(null, "nil?", "nil?", 1612038930, null), new D(null, "itm", "itm", -713282527, null)))], 0)))].join(""));
+  }
+  return xj(a, b);
+};
+yj.J = 2;
+function zj(a, b, c, d, e) {
+  for (var f = 0;;) {
+    if (f < e) {
+      c[d + f] = a[b + f], f += 1;
+    } else {
+      break;
+    }
+  }
+}
+function Aj(a, b, c, d) {
+  this.head = a;
+  this.tail = b;
+  this.length = c;
+  this.o = d;
+}
+Aj.prototype.pop = function() {
+  if (0 === this.length) {
+    return null;
+  }
+  var a = this.o[this.tail];
+  this.o[this.tail] = null;
+  this.tail = (this.tail + 1) % this.o.length;
+  --this.length;
+  return a;
+};
+Aj.prototype.unshift = function(a) {
+  this.o[this.head] = a;
+  this.head = (this.head + 1) % this.o.length;
+  this.length += 1;
+  return null;
+};
+function Bj(a, b) {
+  a.length + 1 === a.o.length && a.resize();
+  a.unshift(b);
+}
+Aj.prototype.resize = function() {
+  var a = Array(2 * this.o.length);
+  return this.tail < this.head ? (zj(this.o, this.tail, a, 0, this.length), this.tail = 0, this.head = this.length, this.o = a) : this.tail > this.head ? (zj(this.o, this.tail, a, 0, this.o.length - this.tail), zj(this.o, 0, a, this.o.length - this.tail, this.head), this.tail = 0, this.head = this.length, this.o = a) : this.tail === this.head ? (this.head = this.tail = 0, this.o = a) : null;
+};
+function Cj(a, b) {
+  for (var c = a.length, d = 0;;) {
+    if (d < c) {
+      var e = a.pop(), f;
+      f = e;
+      f = b.h ? b.h(f) : b.call(null, f);
+      r(f) && a.unshift(e);
+      d += 1;
+    } else {
+      break;
+    }
+  }
+}
+function Dj(a) {
+  if (!(0 < a)) {
+    throw Error([x("Assert failed: "), x("Can't create a ring buffer of size 0"), x("\n"), x(dg(R([Kd(new D(null, "\x3e", "\x3e", 1085014381, null), new D(null, "n", "n", -2092305744, null), 0)], 0)))].join(""));
+  }
+  return new Aj(0, 0, 0, Array(a));
+}
+function Ej(a, b) {
+  this.L = a;
+  this.n = b;
+  this.B = 2;
+  this.H = 0;
+}
+function Fj(a) {
+  return a.L.length === a.n;
+}
+Ej.prototype.gc = function(a, b) {
+  Bj(this.L, b);
+  return this;
+};
+Ej.prototype.$ = function() {
+  return this.L.length;
+};
+var Gj;
+a: {
+  var Hj = ba.navigator;
+  if (Hj) {
+    var Ij = Hj.userAgent;
+    if (Ij) {
+      Gj = Ij;
+      break a;
+    }
+  }
+  Gj = "";
+}
+;var Jj;
+function Kj() {
+  var a = ba.MessageChannel;
+  "undefined" === typeof a && "undefined" !== typeof window && window.postMessage && window.addEventListener && -1 == Gj.indexOf("Presto") && (a = function() {
+    var a = document.createElement("IFRAME");
+    a.style.display = "none";
+    a.src = "";
+    document.documentElement.appendChild(a);
+    var b = a.contentWindow, a = b.document;
+    a.open();
+    a.write("");
+    a.close();
+    var c = "callImmediate" + Math.random(), d = "file:" == b.location.protocol ? "*" : b.location.protocol + "//" + b.location.host, a = ha(function(a) {
+      if (("*" == d || a.origin == d) && a.data == c) {
+        this.port1.onmessage();
+      }
+    }, this);
+    b.addEventListener("message", a, !1);
+    this.port1 = {};
+    this.port2 = {postMessage:function() {
+      b.postMessage(c, d);
+    }};
+  });
+  if ("undefined" !== typeof a && -1 == Gj.indexOf("Edge") && -1 == Gj.indexOf("Trident") && -1 == Gj.indexOf("MSIE")) {
+    var b = new a, c = {}, d = c;
+    b.port1.onmessage = function() {
+      if (void 0 !== c.next) {
+        c = c.next;
+        var a = c.ac;
+        c.ac = null;
+        a();
+      }
+    };
+    return function(a) {
+      d.next = {ac:a};
+      d = d.next;
+      b.port2.postMessage(0);
+    };
+  }
+  return "undefined" !== typeof document && "onreadystatechange" in document.createElement("SCRIPT") ? function(a) {
+    var b = document.createElement("SCRIPT");
+    b.onreadystatechange = function() {
+      b.onreadystatechange = null;
+      b.parentNode.removeChild(b);
+      b = null;
+      a();
+      a = null;
+    };
+    document.documentElement.appendChild(b);
+  } : function(a) {
+    ba.setTimeout(a, 0);
+  };
+}
+;var Lj = Dj(32), Mj = !1, Nj = !1;
+function Oj() {
+  Mj = !0;
+  Nj = !1;
+  for (var a = 0;;) {
+    var b = Lj.pop();
+    if (null != b && (b.D ? b.D() : b.call(null), 1024 > a)) {
+      a += 1;
+      continue;
+    }
+    break;
+  }
+  Mj = !1;
+  return 0 < Lj.length ? Pj.D ? Pj.D() : Pj.call(null) : null;
+}
+function Pj() {
+  var a = Nj;
+  if (r(r(a) ? Mj : a)) {
+    return null;
+  }
+  Nj = !0;
+  "function" != l(ba.setImmediate) || ba.Window && ba.Window.prototype && ba.Window.prototype.setImmediate == ba.setImmediate ? (Jj || (Jj = Kj()), Jj(Oj)) : ba.setImmediate(Oj);
+}
+function Qj(a) {
+  Bj(Lj, a);
+  return Pj();
+}
+;var Rj, Sj = function Sj(b) {
+  "undefined" === typeof Rj && (Rj = function(b, d, e) {
+    this.nc = b;
+    this.ca = d;
+    this.Dc = e;
+    this.B = 425984;
+    this.H = 0;
+  }, Rj.prototype.X = function(b, d) {
+    return new Rj(this.nc, this.ca, d);
+  }, Rj.prototype.T = function() {
+    return this.Dc;
+  }, Rj.prototype.Wa = function() {
+    return this.ca;
+  }, Rj.Wb = function() {
+    return new X(null, 3, 5, Y, [new D(null, "box", "box", -1123515375, null), new D(null, "val", "val", 1769233139, null), new D(null, "meta17657", "meta17657", 1205473490, null)], null);
+  }, Rj.nb = !0, Rj.mb = "cljs.core.async.impl.channels/t17656", Rj.Ab = function(b, d) {
+    return A(d, "cljs.core.async.impl.channels/t17656");
+  });
+  return new Rj(Sj, b, gf);
+};
+function Tj(a, b) {
+  this.handler = a;
+  this.ca = b;
+}
+function Uj(a) {
+  return vj(a.handler);
+}
+var Vj = function Vj(b) {
+  if (b ? b.fc : b) {
+    return b.fc();
+  }
+  var c;
+  c = Vj[l(null == b ? null : b)];
+  if (!c && (c = Vj._, !c)) {
+    throw w("MMC.abort", b);
+  }
+  return c.call(null, b);
+};
+function Wj(a, b, c, d, e, f, h) {
+  this.Ta = a;
+  this.Db = b;
+  this.Qa = c;
+  this.Cb = d;
+  this.L = e;
+  this.closed = f;
+  this.qa = h;
+}
+Wj.prototype.fc = function() {
+  for (;;) {
+    var a = this.Qa.pop();
+    if (null != a) {
+      var b = a.handler;
+      Qj(function(a) {
+        return function() {
+          return a.h ? a.h(!0) : a.call(null, !0);
+        };
+      }(b.f, b, a.ca, a, this));
+    }
+    break;
+  }
+  Cj(this.Qa, je());
+  return uj(this);
+};
+Wj.prototype.Tb = function(a, b, c) {
+  var d = this;
+  if (null == b) {
+    throw Error([x("Assert failed: "), x("Can't put nil in on a channel"), x("\n"), x(dg(R([Kd(new D(null, "not", "not", 1044554643, null), Kd(new D(null, "nil?", "nil?", 1612038930, null), new D(null, "val", "val", 1769233139, null)))], 0)))].join(""));
+  }
+  if (a = d.closed) {
+    return Sj(!a);
+  }
+  if (r(function() {
+    var a = d.L;
+    return r(a) ? Fa(Fj(d.L)) : a;
+  }())) {
+    for (c = Ec(function() {
+      var a = d.L;
+      return d.qa.l ? d.qa.l(a, b) : d.qa.call(null, a, b);
+    }());;) {
+      if (0 < d.Ta.length && 0 < S(d.L)) {
+        var e = d.Ta.pop(), f = e.f, h = d.L.L.pop();
+        Qj(function(a, b) {
+          return function() {
+            return a.h ? a.h(b) : a.call(null, b);
+          };
+        }(f, h, e, c, a, this));
+      }
+      break;
+    }
+    c && Vj(this);
+    return Sj(!0);
+  }
+  e = function() {
+    for (;;) {
+      var a = d.Ta.pop();
+      if (r(a)) {
+        if (r(!0)) {
+          return a;
+        }
+      } else {
+        return null;
+      }
+    }
+  }();
+  if (r(e)) {
+    return c = wj(e), Qj(function(a) {
+      return function() {
+        return a.h ? a.h(b) : a.call(null, b);
+      };
+    }(c, e, a, this)), Sj(!0);
+  }
+  64 < d.Cb ? (d.Cb = 0, Cj(d.Qa, Uj)) : d.Cb += 1;
+  if (!(1024 > d.Qa.length)) {
+    throw Error([x("Assert failed: "), x([x("No more than "), x(1024), x(" pending puts are allowed on a single channel."), x(" Consider using a windowed buffer.")].join("")), x("\n"), x(dg(R([Kd(new D(null, "\x3c", "\x3c", 993667236, null), Kd(new D(null, ".-length", ".-length", -280799999, null), new D(null, "puts", "puts", -1883877054, null)), new D("impl", "MAX-QUEUE-SIZE", "impl/MAX-QUEUE-SIZE", 1508600732, null))], 0)))].join(""));
+  }
+  Bj(d.Qa, new Tj(c, b));
+  return null;
+};
+Wj.prototype.jc = function(a, b) {
+  var c = this;
+  if (null != c.L && 0 < S(c.L)) {
+    for (var d = b.f, e = Sj(c.L.L.pop());;) {
+      if (!r(Fj(c.L))) {
+        var f = c.Qa.pop();
+        if (null != f) {
+          var h = f.handler, k = f.ca;
+          Qj(function(a) {
+            return function() {
+              return a.h ? a.h(!0) : a.call(null, !0);
+            };
+          }(h.f, h, k, f, d, e, this));
+          Ec(function() {
+            var a = c.L, b = k;
+            return c.qa.l ? c.qa.l(a, b) : c.qa.call(null, a, b);
+          }()) && Vj(this);
+          continue;
+        }
+      }
+      break;
+    }
+    return e;
+  }
+  d = function() {
+    for (;;) {
+      var a = c.Qa.pop();
+      if (r(a)) {
+        if (vj(a.handler)) {
+          return a;
+        }
+      } else {
+        return null;
+      }
+    }
+  }();
+  if (r(d)) {
+    return e = wj(d.handler), Qj(function(a) {
+      return function() {
+        return a.h ? a.h(!0) : a.call(null, !0);
+      };
+    }(e, d, this)), Sj(d.ca);
+  }
+  if (r(c.closed)) {
+    return r(c.L) && (d = c.L, c.qa.h ? c.qa.h(d) : c.qa.call(null, d)), r(r(!0) ? b.f : !0) ? (d = function() {
+      var a = c.L;
+      return r(a) ? 0 < S(c.L) : a;
+    }(), d = r(d) ? c.L.L.pop() : null, Sj(d)) : null;
+  }
+  64 < c.Db ? (c.Db = 0, Cj(c.Ta, vj)) : c.Db += 1;
+  if (!(1024 > c.Ta.length)) {
+    throw Error([x("Assert failed: "), x([x("No more than "), x(1024), x(" pending takes are allowed on a single channel.")].join("")), x("\n"), x(dg(R([Kd(new D(null, "\x3c", "\x3c", 993667236, null), Kd(new D(null, ".-length", ".-length", -280799999, null), new D(null, "takes", "takes", 298247964, null)), new D("impl", "MAX-QUEUE-SIZE", "impl/MAX-QUEUE-SIZE", 1508600732, null))], 0)))].join(""));
+  }
+  Bj(c.Ta, b);
+  return null;
+};
+Wj.prototype.zb = function() {
+  var a = this;
+  if (!a.closed) {
+    a.closed = !0;
+    if (r(function() {
+      var b = a.L;
+      return r(b) ? 0 === a.Qa.length : b;
+    }())) {
+      var b = a.L;
+      a.qa.h ? a.qa.h(b) : a.qa.call(null, b);
+    }
+    for (;b = a.Ta.pop(), null != b;) {
+      var c = b.f, d = r(function() {
+        var b = a.L;
+        return r(b) ? 0 < S(a.L) : b;
+      }()) ? a.L.L.pop() : null;
+      Qj(function(a, b) {
+        return function() {
+          return a.h ? a.h(b) : a.call(null, b);
+        };
+      }(c, d, b, this));
+    }
+  }
+  return null;
+};
+function Xj(a) {
+  console.log(a);
+  return null;
+}
+function Yj(a, b) {
+  var c = (r(null) ? null : Xj).call(null, b);
+  return null == c ? a : yj.l(a, c);
+}
+function Zj(a) {
+  return new Wj(Dj(32), 0, Dj(32), 0, a, !1, function() {
+    return function(a) {
+      return function() {
+        function c(c, d) {
+          try {
+            return a.l ? a.l(c, d) : a.call(null, c, d);
+          } catch (e) {
+            return Yj(c, e);
+          }
+        }
+        function d(c) {
+          try {
+            return a.h ? a.h(c) : a.call(null, c);
+          } catch (d) {
+            return Yj(c, d);
+          }
+        }
+        var e = null, e = function(a, b) {
+          switch(arguments.length) {
+            case 1:
+              return d.call(this, a);
+            case 2:
+              return c.call(this, a, b);
+          }
+          throw Error("Invalid arity: " + arguments.length);
+        };
+        e.h = d;
+        e.l = c;
+        return e;
+      }();
+    }(r(null) ? null.h ? null.h(yj) : null.call(null, yj) : yj);
+  }());
+}
+;var ak, bk = function bk(b) {
+  "undefined" === typeof ak && (ak = function(b, d, e) {
+    this.Vb = b;
+    this.f = d;
+    this.Cc = e;
+    this.B = 393216;
+    this.H = 0;
+  }, ak.prototype.X = function(b, d) {
+    return new ak(this.Vb, this.f, d);
+  }, ak.prototype.T = function() {
+    return this.Cc;
+  }, ak.prototype.hc = function() {
+    return !0;
+  }, ak.prototype.ic = function() {
+    return this.f;
+  }, ak.Wb = function() {
+    return new X(null, 3, 5, Y, [new D(null, "fn-handler", "fn-handler", 648785851, null), new D(null, "f", "f", 43394975, null), new D(null, "meta17529", "meta17529", -733632008, null)], null);
+  }, ak.nb = !0, ak.mb = "cljs.core.async.impl.ioc-helpers/t17528", ak.Ab = function(b, d) {
+    return A(d, "cljs.core.async.impl.ioc-helpers/t17528");
+  });
+  return new ak(bk, b, gf);
+};
+function ck(a) {
+  try {
+    return a[0].call(null, a);
+  } catch (b) {
+    throw b instanceof Object && a[6].zb(), b;
+  }
+}
+function dk(a, b, c) {
+  c = c.jc(null, bk(function(c) {
+    a[2] = c;
+    a[1] = b;
+    return ck(a);
+  }));
+  return r(c) ? (a[2] = O.h ? O.h(c) : O.call(null, c), a[1] = b, Vg) : null;
+}
+function ek(a, b) {
+  var c = a[6];
+  null != b && c.Tb(0, b, bk(function() {
+    return function() {
+      return null;
+    };
+  }(c)));
+  c.zb();
+  return c;
+}
+function fk(a) {
+  for (;;) {
+    var b = a[4], c = Wg.h(b), d = oh.h(b), e = a[5];
+    if (r(function() {
+      var a = e;
+      return r(a) ? Fa(b) : a;
+    }())) {
+      throw e;
+    }
+    if (r(function() {
+      var a = e;
+      return r(a) ? (a = c, r(a) ? e instanceof d : a) : a;
+    }())) {
+      a[1] = c;
+      a[2] = e;
+      a[5] = null;
+      a[4] = Yc.C(b, Wg, null, R([oh, null], 0));
+      break;
+    }
+    if (r(function() {
+      var a = e;
+      return r(a) ? Fa(c) && Fa(Jg.h(b)) : a;
+    }())) {
+      a[4] = sh.h(b);
+    } else {
+      if (r(function() {
+        var a = e;
+        return r(a) ? (a = Fa(c)) ? Jg.h(b) : a : a;
+      }())) {
+        a[1] = Jg.h(b);
+        a[4] = Yc.w(b, Jg, null);
+        break;
+      }
+      if (r(function() {
+        var a = Fa(e);
+        return a ? Jg.h(b) : a;
+      }())) {
+        a[1] = Jg.h(b);
+        a[4] = Yc.w(b, Jg, null);
+        break;
+      }
+      if (Fa(e) && Fa(Jg.h(b))) {
+        a[1] = uh.h(b);
+        a[4] = sh.h(b);
+        break;
+      }
+      throw Error("No matching clause");
+    }
+  }
+}
+;for (var gk = Array(1), hk = 0;;) {
+  if (hk < gk.length) {
+    gk[hk] = null, hk += 1;
+  } else {
+    break;
+  }
+}
+;function ik(a) {
+  a = N.l(a, 0) ? null : a;
+  if (r(null) && !r(a)) {
+    throw Error([x("Assert failed: "), x("buffer must be supplied when transducer is"), x("\n"), x(dg(R([new D(null, "buf-or-n", "buf-or-n", -1646815050, null)], 0)))].join(""));
+  }
+  a = "number" === typeof a ? new Ej(Dj(a), a) : a;
+  return Zj(a);
+}
+var kk = function jk(b) {
+  "undefined" === typeof sj && (sj = function(b, d, e) {
+    this.Vb = b;
+    this.f = d;
+    this.Bc = e;
+    this.B = 393216;
+    this.H = 0;
+  }, sj.prototype.X = function(b, d) {
+    return new sj(this.Vb, this.f, d);
+  }, sj.prototype.T = function() {
+    return this.Bc;
+  }, sj.prototype.hc = function() {
+    return !0;
+  }, sj.prototype.ic = function() {
+    return this.f;
+  }, sj.Wb = function() {
+    return new X(null, 3, 5, Y, [new D(null, "fn-handler", "fn-handler", 648785851, null), new D(null, "f", "f", 43394975, null), new D(null, "meta14822", "meta14822", -622561726, null)], null);
+  }, sj.nb = !0, sj.mb = "cljs.core.async/t14821", sj.Ab = function(b, d) {
+    return A(d, "cljs.core.async/t14821");
+  });
+  return new sj(jk, b, gf);
+}(function() {
+  return null;
+});
+var lk;
+function mk(a) {
+  var b = T(a, 0);
+  a = T(a, 1);
+  if (r(a)) {
+    throw a;
+  }
+  return b;
+}
+var nk = function nk(b) {
+  "undefined" === typeof lk && (lk = function(b, d, e) {
+    this.Fc = b;
+    this.promise = d;
+    this.Ec = e;
+    this.B = 393216;
+    this.H = 0;
+  }, lk.prototype.X = function(b, d) {
+    return new lk(this.Fc, this.promise, d);
+  }, lk.prototype.T = function() {
+    return this.Ec;
+  }, lk.prototype.jc = function(b, d) {
+    this.promise.then(function(b) {
+      return function(c) {
+        return Qj(function() {
+          return function() {
+            return wj(d).call(null, new X(null, 2, 5, Y, [c, null], null));
+          };
+        }(b));
+      };
+    }(this), function(b) {
+      return function(c) {
+        return Qj(function() {
+          return function() {
+            return wj(d).call(null, new X(null, 2, 5, Y, [null, c], null));
+          };
+        }(b));
+      };
+    }(this));
+    return null;
+  }, lk.Wb = function() {
+    return new X(null, 3, 5, Y, [new D(null, "pair-port", "pair-port", 1268194861, null), new D(null, "promise", "promise", -887306482, null), new D(null, "meta23030", "meta23030", 969389769, null)], null);
+  }, lk.nb = !0, lk.mb = "cljs-promises.async/t23029", lk.Ab = function(b, d) {
+    return A(d, "cljs-promises.async/t23029");
+  });
+  return new lk(nk, b, gf);
+};
+var ok = new Knex({client:"websql", useNullAsDefault:!0}), pk = ok.schema;
+window.Ac = ok;
+function qk(a) {
+  a.increments("id").primary();
+  a.string("last_name");
+  return a.string("first_name");
+}
+function rk(a) {
+  a.increments("id").primary();
+  a.string("title");
+  a.integer("author_id");
+  return a.integer("subject_id");
+}
+function sk(a) {
+  a.increments("id").primary();
+  return a.string("subject");
+}
+function tk() {
+  var a = [pk.dropTableIfExists("authors"), pk.dropTableIfExists("books"), pk.dropTableIfExists("subjects")], b = [pk.createTableIfNotExists("authors", qk), pk.createTableIfNotExists("books", rk), pk.createTableIfNotExists("subjects", sk)];
+  return nk(Promise.all(a).then(function(a, b) {
+    return function() {
+      return Promise.all(b);
+    };
+  }(a, b)));
+}
+;var uk = new Knex({client:"websql", debug:!0, useNullAsDefault:!0}), vk = new Knex({client:"websql", useNullAsDefault:!0});
+function wk() {
+  var a = ik(null);
+  console.log = function(a) {
+    return function(c) {
+      c = tj(a, new n(null, 2, [ih, c.sql, Lg, c.bindings], null), kk);
+      return r(c) ? O.h ? O.h(c) : O.call(null, c) : !0;
+    };
+  }(a);
+  return a;
+}
+;function xk(a) {
+  window.knex = uk;
   window.Tc = null;
   a = [x("window.currentPromise \x3d "), x(a)].join("");
   try {
     eval(a);
     var b = window.currentPromise;
-    return r(b) ? Oi(b) : null;
+    return r(b) ? nk(b) : null;
   } catch (c) {
-    return Oi(Promise.reject(c));
+    return nk(Promise.reject(c));
   }
 }
-;function Bk(a) {
+;function yk(a) {
   var b = cf(a);
   return yd(function() {
     return function(b) {
@@ -7928,24 +7919,24 @@ for (var xk;vk.length && (xk = vk.shift());) {
     };
   }(b), b);
 }
-function Ck(a) {
+function zk(a) {
   return "string" === typeof a || "number" === typeof a;
 }
-function Dk(a, b) {
-  return new X(null, 3, 5, Y, [Jh, "string" === typeof a ? new X(null, 2, 5, Y, [ug, [x('"'), x(a), x('"')].join("")], null) : "number" === typeof a ? new X(null, 2, 5, Y, [pg, a], null) : null, r(b) ? "," : null], null);
+function Ak(a, b) {
+  return new X(null, 3, 5, Y, [Kh, "string" === typeof a ? new X(null, 2, 5, Y, [ug, [x('"'), x(a), x('"')].join("")], null) : "number" === typeof a ? new X(null, 2, 5, Y, [pg, a], null) : null, r(b) ? "," : null], null);
 }
-function Ek(a) {
+function Bk(a) {
   return new X(null, 3, 5, Y, [zg, new n(null, 1, [bh, function() {
     return qc.l(a, Fa);
   }], null), r(O.h ? O.h(a) : O.call(null, a)) ? "+" : "-"], null);
 }
-function Fk(a, b) {
-  return new X(null, 3, 5, Y, [Jh, r(a) ? new X(null, 2, 5, Y, [nh, [x(a), x(": ")].join("")], null) : null, b], null);
+function Ck(a, b) {
+  return new X(null, 3, 5, Y, [Kh, r(a) ? new X(null, 2, 5, Y, [nh, [x(a), x(": ")].join("")], null) : null, b], null);
 }
-function Gk() {
+function Dk() {
   return function(a) {
     return function(b, c, d) {
-      return new X(null, 6, 5, Y, [xg, new X(null, 2, 5, Y, [Ek, a], null), new X(null, 3, 5, Y, [Fk, b, "["], null), r(O.h ? O.h(a) : O.call(null, a)) ? "\u2026" : new X(null, 2, 5, Y, [Kh, function() {
+      return new X(null, 6, 5, Y, [xg, new X(null, 2, 5, Y, [Bk, a], null), new X(null, 3, 5, Y, [Ck, b, "["], null), r(O.h ? O.h(a) : O.call(null, a)) ? "\u2026" : new X(null, 2, 5, Y, [Lh, function() {
         return function(a) {
           return function h(b) {
             return new Qd(null, function() {
@@ -7959,7 +7950,7 @@ function Gk() {
                         for (var a = 0;;) {
                           if (a < e) {
                             var b = y.l(d, a), h = t, k = !N.l(Pc(c), b);
-                            h.add(r(Ck(b)) ? new X(null, 2, 5, Y, [fh, new X(null, 3, 5, Y, [Dk, b, k], null)], null) : new X(null, 4, 5, Y, [Hk, null, b, k], null));
+                            h.add(r(zk(b)) ? new X(null, 2, 5, Y, [fh, new X(null, 3, 5, Y, [Ak, b, k], null)], null) : new X(null, 4, 5, Y, [Ek, null, b, k], null));
                             a += 1;
                           } else {
                             return !0;
@@ -7970,7 +7961,7 @@ function Gk() {
                     var v = J(a);
                     return Q(function() {
                       var a = !N.l(Pc(c), v);
-                      return r(Ck(v)) ? new X(null, 2, 5, Y, [fh, new X(null, 3, 5, Y, [Dk, v, a], null)], null) : new X(null, 4, 5, Y, [Hk, null, v, a], null);
+                      return r(zk(v)) ? new X(null, 2, 5, Y, [fh, new X(null, 3, 5, Y, [Ak, v, a], null)], null) : new X(null, 4, 5, Y, [Ek, null, v, a], null);
                     }(), h(tc(a)));
                   }
                   return null;
@@ -7981,16 +7972,16 @@ function Gk() {
         }(a)(c);
       }()], null), "]", r(d) ? "," : null], null);
     };
-  }(sj.h(!1));
+  }(ji.h(!1));
 }
-function Ik(a, b, c) {
-  return new X(null, 4, 5, Y, [fh, new X(null, 2, 5, Y, [nh, [x(a), x(":")].join("")], null), new X(null, 2, 5, Y, [wg, new X(null, 2, 5, Y, [Dk, b], null)], null), r(c) ? "," : null], null);
+function Fk(a, b, c) {
+  return new X(null, 4, 5, Y, [fh, new X(null, 2, 5, Y, [nh, [x(a), x(":")].join("")], null), new X(null, 2, 5, Y, [wg, new X(null, 2, 5, Y, [Ak, b], null)], null), r(c) ? "," : null], null);
 }
-var Hk = function Hk() {
+var Ek = function Ek() {
   return function(b) {
     return function(c, d, e) {
-      return new X(null, 6, 5, Y, [Eh, new X(null, 2, 5, Y, [Ek, b], null), new X(null, 3, 5, Y, [Fk, c, "{"], null), r(O.h ? O.h(b) : O.call(null, b)) ? "\u2026" : new X(null, 2, 5, Y, [Kh, function() {
-        var c = Bk(d);
+      return new X(null, 6, 5, Y, [Fh, new X(null, 2, 5, Y, [Bk, b], null), new X(null, 3, 5, Y, [Ck, c, "{"], null), r(O.h ? O.h(b) : O.call(null, b)) ? "\u2026" : new X(null, 2, 5, Y, [Lh, function() {
+        var c = yk(d);
         return function(b, c) {
           return function p(e) {
             return new Qd(null, function(b) {
@@ -8006,7 +7997,7 @@ var Hk = function Hk() {
                             var e = y.l(f, c), p = k, q = Y, v;
                             v = Pd(e);
                             var F = void 0, F = e, F = d.h ? d.h(F) : d.call(null, F), e = !N.l(Pc(b), e);
-                            v = jd(F) ? new X(null, 4, 5, Y, [Gk, v, F, e], null) : id(F) ? new X(null, 4, 5, Y, [Hk, v, F, e], null) : new X(null, 4, 5, Y, [Ik, v, F, e], null);
+                            v = jd(F) ? new X(null, 4, 5, Y, [Dk, v, F, e], null) : id(F) ? new X(null, 4, 5, Y, [Ek, v, F, e], null) : new X(null, 4, 5, Y, [Fk, v, F, e], null);
                             p.add(new X(null, 2, 5, q, [lh, v], null));
                             c += 1;
                           } else {
@@ -8021,7 +8012,7 @@ var Hk = function Hk() {
                       e = H;
                       e = d.h ? d.h(e) : d.call(null, e);
                       var f = !N.l(Pc(b), H);
-                      return jd(e) ? new X(null, 4, 5, Y, [Gk, c, e, f], null) : id(e) ? new X(null, 4, 5, Y, [Hk, c, e, f], null) : new X(null, 4, 5, Y, [Ik, c, e, f], null);
+                      return jd(e) ? new X(null, 4, 5, Y, [Dk, c, e, f], null) : id(e) ? new X(null, 4, 5, Y, [Ek, c, e, f], null) : new X(null, 4, 5, Y, [Fk, c, e, f], null);
                     }()], null), p(tc(c)));
                   }
                   return null;
@@ -8032,15 +8023,15 @@ var Hk = function Hk() {
         }(c, b)(c);
       }()], null), "}", r(e) ? "," : null], null);
     };
-  }(sj.h(!1));
+  }(ji.h(!1));
 };
-function Jk(a) {
-  return new X(null, 2, 5, Y, [Qg, new X(null, 4, 5, Y, [Gk, null, a, !1], null)], null);
+function Gk(a) {
+  return new X(null, 2, 5, Y, [Qg, new X(null, 4, 5, Y, [Dk, null, a, !1], null)], null);
 }
-;var Kk = sj.h(null), mg = sj.h(null), Lk = sj.h(null), Mk = sj.h(Sc);
-function Nk() {
-  var a = Fi(1);
-  ti(function(a) {
+;var Hk = ji.h(null), mg = ji.h(null), Ik = ji.h(null), Jk = ji.h(Sc);
+function Kk() {
+  var a = ik(1);
+  Qj(function(a) {
     return function() {
       var c = function() {
         return function(a) {
@@ -8059,7 +8050,7 @@ function Nk() {
                     }
                   } catch (h) {
                     if (h instanceof Object) {
-                      c[5] = h, ei(c), d = Vg;
+                      c[5] = h, fk(c), d = Vg;
                     } else {
                       throw h;
                     }
@@ -8100,16 +8091,16 @@ function Nk() {
               return Vg;
             }
             if (1 === b) {
-              return b = O.h ? O.h(Kk) : O.call(null, Kk), a[1] = r(b) ? 2 : 3, Vg;
+              return b = O.h ? O.h(Hk) : O.call(null, Hk), a[1] = r(b) ? 2 : 3, Vg;
             }
             if (4 === b) {
-              return b = a[2], di(a, b);
+              return b = a[2], ek(a, b);
             }
             if (6 === b) {
               var d = a[10], c = function() {
                 var a = d;
                 return V.l ? V.l(mg, a) : V.call(null, mg, a);
-              }(), b = V.l ? V.l(Lk, null) : V.call(null, Lk, null);
+              }(), b = V.l ? V.l(Ik, null) : V.call(null, Ik, null);
               a[11] = c;
               a[2] = b;
               a[1] = 8;
@@ -8121,13 +8112,13 @@ function Nk() {
             if (2 === b) {
               var b = function() {
                 var a = Sc;
-                return V.l ? V.l(Mk, a) : V.call(null, Mk, a);
-              }(), c = V.l ? V.l(mg, null) : V.call(null, mg, null), m = O.h ? O.h(Kk) : O.call(null, Kk), m = Ak(m);
+                return V.l ? V.l(Jk, a) : V.call(null, Jk, a);
+              }(), c = V.l ? V.l(mg, null) : V.call(null, mg, null), m = O.h ? O.h(Hk) : O.call(null, Hk), m = xk(m);
               a[12] = b;
               a[13] = c;
-              return ci(a, 5, m);
+              return dk(a, 5, m);
             }
-            return 11 === b ? (b = a[2], b = V.l ? V.l(Lk, b) : V.call(null, Lk, b), a[2] = b, a[1] = 8, Vg) : 9 === b ? (b = a[7], a[2] = b, a[1] = 11, Vg) : 5 === b ? (d = a[10], b = a[2], c = b.h ? b.h(0) : b.call(null, 0), b = b.h ? b.h(1) : b.call(null, 1), a[10] = c, a[8] = b, a[1] = r(c) ? 6 : 7, Vg) : 10 === b ? (b = a[8], b = b.toString(), a[2] = b, a[1] = 11, Vg) : 8 === b ? (b = a[2], a[2] = b, a[1] = 4, Vg) : null;
+            return 11 === b ? (b = a[2], b = V.l ? V.l(Ik, b) : V.call(null, Ik, b), a[2] = b, a[1] = 8, Vg) : 9 === b ? (b = a[7], a[2] = b, a[1] = 11, Vg) : 5 === b ? (d = a[10], b = a[2], c = b.h ? b.h(0) : b.call(null, 0), b = b.h ? b.h(1) : b.call(null, 1), a[10] = c, a[8] = b, a[1] = r(c) ? 6 : 7, Vg) : 10 === b ? (b = a[8], b = b.toString(), a[2] = b, a[1] = 11, Vg) : 8 === b ? (b = a[2], a[2] = b, a[1] = 4, Vg) : null;
           };
         }(a), a);
       }(), d = function() {
@@ -8135,42 +8126,39 @@ function Nk() {
         d[6] = a;
         return d;
       }();
-      return bi(d);
+      return ck(d);
     };
   }(a));
   return a;
 }
-function Ok(a) {
-  V.l ? V.l(Kk, a) : V.call(null, Kk, a);
-  return Nk();
-}
-function Pk(a) {
-  return new X(null, 2, 5, Y, [yh, new X(null, 3, 5, Y, [Hh, new n(null, 1, [bh, function() {
-    return Ok(a);
+function Lk(a) {
+  return new X(null, 2, 5, Y, [zh, new X(null, 3, 5, Y, [Ih, new n(null, 1, [bh, function() {
+    V.l ? V.l(Hk, a) : V.call(null, Hk, a);
+    return Kk();
   }], null), new X(null, 2, 5, Y, [Pg, new X(null, 2, 5, Y, [Bg, a], null)], null)], null)], null);
 }
-function Qk() {
+function Mk() {
   return function(a) {
     return function() {
-      return new X(null, 5, 5, Y, [yg, r(O.h ? O.h(a) : O.call(null, a)) ? new n(null, 1, [dh, new n(null, 2, [ph, 0, Lh, 0], null)], null) : null, r(O.h ? O.h(a) : O.call(null, a)) ? null : new X(null, 2, 5, Y, [Ch, "Examples"], null), new X(null, 3, 5, Y, [Sh, a, "examples"], null), r(O.h ? O.h(a) : O.call(null, a)) ? null : new X(null, 4, 5, Y, [jh, new X(null, 2, 5, Y, [Pk, "knex('subjects')"], null), new X(null, 2, 5, Y, [Pk, "knex\n  .table('authors')\n  .innerJoin('books', 'books.author_id', 'authors.id')\n  .select('authors.first_name', 'books.title')"], 
-      null), new X(null, 2, 5, Y, [Pk, "knex\n  .select(\n    knex.raw('first_name || \" \" || last_name as author'),\n    knex.raw('count(books.id) as quantity')\n  )\n  .from('books')\n  .innerJoin('authors', 'authors.id', 'books.author_id')\n  .groupBy('author_id')\n  .orderBy('quantity', 'desc')"], null)], null)], null);
+      return new X(null, 5, 5, Y, [yg, r(O.h ? O.h(a) : O.call(null, a)) ? new n(null, 1, [dh, new n(null, 2, [ph, 0, Mh, 0], null)], null) : null, r(O.h ? O.h(a) : O.call(null, a)) ? null : new X(null, 2, 5, Y, [Dh, "Examples"], null), new X(null, 3, 5, Y, [pj, a, "examples"], null), r(O.h ? O.h(a) : O.call(null, a)) ? null : new X(null, 4, 5, Y, [jh, new X(null, 2, 5, Y, [Lk, "knex('subjects')"], null), new X(null, 2, 5, Y, [Lk, "knex\n  .table('authors')\n  .innerJoin('books', 'books.author_id', 'authors.id')\n  .select('authors.first_name', 'books.title')"], 
+      null), new X(null, 2, 5, Y, [Lk, "knex\n  .select(\n    knex.raw('first_name || \" \" || last_name as author'),\n    knex.raw('count(books.id) as quantity')\n  )\n  .from('books')\n  .innerJoin('authors', 'authors.id', 'books.author_id')\n  .groupBy('author_id')\n  .orderBy('quantity', 'desc')"], null)], null)], null);
     };
-  }(sj.h(!1));
+  }(ji.h(!1));
 }
-function Rk(a) {
-  var b = O.h ? O.h(Mk) : O.call(null, Mk), c = S(b), d = O.h ? O.h(mg) : O.call(null, mg), e = S(d);
-  return new X(null, 4, 5, Y, [Eg, new X(null, 2, 5, Y, [Ng, new X(null, 3, 5, Y, [Hh, new n(null, 1, [bh, function() {
+function Nk(a) {
+  var b = O.h ? O.h(Jk) : O.call(null, Jk), c = S(b), d = O.h ? O.h(mg) : O.call(null, mg), e = S(d);
+  return new X(null, 4, 5, Y, [Eg, new X(null, 2, 5, Y, [Ng, new X(null, 3, 5, Y, [Ih, new n(null, 1, [bh, function() {
     return function() {
       return V.l ? V.l(a, "records") : V.call(null, a, "records");
     };
-  }(b, c, d, e)], null), [x("returned "), x(e), x(" row"), x(N.l(e, 1) ? null : "s")].join("")], null)], null), new X(null, 2, 5, Y, [Ng, new X(null, 3, 5, Y, [Hh, new n(null, 1, [bh, function() {
+  }(b, c, d, e)], null), [x("returned "), x(e), x(" row"), x(N.l(e, 1) ? null : "s")].join("")], null)], null), new X(null, 2, 5, Y, [Ng, new X(null, 3, 5, Y, [Ih, new n(null, 1, [bh, function() {
     return function() {
       return V.l ? V.l(a, "sql") : V.call(null, a, "sql");
     };
   }(b, c, d, e)], null), [x(c), x(" SQL statement"), x(N.l(c, 1) ? null : "s")].join("")], null)], null), new X(null, 3, 5, Y, [Dg, "knex ", window.Ac.VERSION], null)], null);
 }
-function Sk(a) {
-  var b = Y, c = new X(null, 3, 5, Y, [zh, new X(null, 2, 5, Y, [Mg, "query: "], null), new X(null, 2, 5, Y, [th, ih.h(a)], null)], null), d = Y, e = new X(null, 2, 5, Y, [Mg, "bindings: "], null), f = Y;
+function Ok(a) {
+  var b = Y, c = new X(null, 3, 5, Y, [Ah, new X(null, 2, 5, Y, [Mg, "query: "], null), new X(null, 2, 5, Y, [th, ih.h(a)], null)], null), d = Y, e = new X(null, 2, 5, Y, [Mg, "bindings: "], null), f = Y;
   a: {
     var h = Lg.h(a);
     a = new ka;
@@ -8185,10 +8173,10 @@ function Sk(a) {
   }
   return new X(null, 3, 5, b, [Ug, c, new X(null, 3, 5, d, [Yg, e, new X(null, 4, 5, f, [th, "[", a, "]"], null)], null)], null);
 }
-function Tk() {
+function Pk() {
   return function(a) {
     return function() {
-      return new X(null, 3, 5, Y, [Ag, new X(null, 2, 5, Y, [Rk, a], null), N.l("records", O.h ? O.h(a) : O.call(null, a)) ? new X(null, 3, 5, Y, [tg, new X(null, 1, 5, Y, [Gg], null), new X(null, 2, 5, Y, [Jk, lg()], null)], null) : new X(null, 2, 5, Y, [vh, function() {
+      return new X(null, 3, 5, Y, [Ag, new X(null, 2, 5, Y, [Nk, a], null), N.l("records", O.h ? O.h(a) : O.call(null, a)) ? new X(null, 3, 5, Y, [tg, new X(null, 1, 5, Y, [Gg], null), new X(null, 2, 5, Y, [Gk, lg()], null)], null) : new X(null, 2, 5, Y, [vh, function() {
         return function(a) {
           return function d(e) {
             return new Qd(null, function() {
@@ -8202,7 +8190,7 @@ function Tk() {
                         for (var p = 0;;) {
                           if (p < k) {
                             var q = y.l(b, p);
-                            m.add(new X(null, 2, 5, Y, [Sk, q], null));
+                            m.add(new X(null, 2, 5, Y, [Ok, q], null));
                             p += 1;
                           } else {
                             b = !0;
@@ -8213,33 +8201,34 @@ function Tk() {
                       return b ? Wd(m.chunk(), d(Xb(a))) : Wd(m.chunk(), null);
                     }
                     m = J(a);
-                    return Q(new X(null, 2, 5, Y, [Sk, m], null), d(tc(a)));
+                    return Q(new X(null, 2, 5, Y, [Ok, m], null), d(tc(a)));
                   }
                   return null;
                 }
               };
             }(a), null, null);
           };
-        }(a)(O.h ? O.h(Mk) : O.call(null, Mk));
+        }(a)(O.h ? O.h(Jk) : O.call(null, Jk));
       }()], null)], null);
     };
-  }(sj.h("records"));
+  }(ji.h("records"));
 }
-function Uk() {
-  return new X(null, 2, 5, Y, [$g, new X(null, 2, 5, Y, [eh, new n(null, 3, [Og, O.h ? O.h(Kk) : O.call(null, Kk), dh, new n(null, 2, [Tg, "100%", Ih, "300px"], null), Bh, function(a) {
+function Qk() {
+  return new X(null, 2, 5, Y, [$g, new X(null, 2, 5, Y, [eh, new n(null, 3, [Og, O.h ? O.h(Hk) : O.call(null, Hk), dh, new n(null, 2, [Tg, "100%", Jh, "300px"], null), Ch, function(a) {
     a = a.target.value;
-    V.l ? V.l(Kk, a) : V.call(null, Kk, a);
-    return Nk();
+    V.l ? V.l(Hk, a) : V.call(null, Hk, a);
+    return Kk();
   }], null)], null)], null);
 }
-function Vk() {
-  return new X(null, 3, 5, Y, [fh, new X(null, 3, 5, Y, [kh, new X(null, 1, 5, Y, [Qk], null), new X(null, 1, 5, Y, [Uk], null)], null), new X(null, 3, 5, Y, [kh, r(O.h ? O.h(Lk) : O.call(null, Lk)) ? new X(null, 2, 5, Y, [sg, O.h ? O.h(Lk) : O.call(null, Lk)], null) : null, r(O.h ? O.h(mg) : O.call(null, mg)) ? new X(null, 1, 5, Y, [Tk], null) : null], null)], null);
+function Rk() {
+  return new X(null, 2, 5, Y, [wh, new X(null, 2, 5, Y, [Eh, "Click an example to the left or type in a knex statement lower left"], null)], null);
+}
+function Sk() {
+  return new X(null, 3, 5, Y, [fh, new X(null, 3, 5, Y, [kh, new X(null, 1, 5, Y, [Mk], null), new X(null, 1, 5, Y, [Qk], null)], null), new X(null, 3, 5, Y, [kh, r(O.h ? O.h(Ik) : O.call(null, Ik)) ? new X(null, 2, 5, Y, [sg, O.h ? O.h(Ik) : O.call(null, Ik)], null) : null, r(O.h ? O.h(mg) : O.call(null, mg)) ? new X(null, 1, 5, Y, [Pk], null) : new X(null, 1, 5, Y, [Rk], null)], null)], null);
 }
 (function() {
-  var a = Li();
-  Ok("knex('subjects')");
-  var b = Fi(1);
-  ti(function(a, b) {
+  var a = wk(), b = ik(1);
+  Qj(function(a, b) {
     return function() {
       var e = function() {
         return function(a) {
@@ -8258,7 +8247,7 @@ function Vk() {
                     }
                   } catch (f) {
                     if (f instanceof Object) {
-                      c[5] = f, ei(c), d = Vg;
+                      c[5] = f, fk(c), d = Vg;
                     } else {
                       throw f;
                     }
@@ -8291,7 +8280,7 @@ function Vk() {
         }(function(a, b) {
           return function(a) {
             var c = a[1];
-            return 1 === c ? (a[2] = null, a[1] = 2, Vg) : 2 === c ? (a[1] = 4, Vg) : 3 === c ? (c = a[2], di(a, c)) : 4 === c ? ci(a, 7, b) : 5 === c ? (a[2] = null, a[1] = 6, Vg) : 6 === c ? (c = a[2], a[2] = c, a[1] = 3, Vg) : 7 === c ? (c = qc.w(Mk, Qc, a[2]), a[7] = c, a[2] = null, a[1] = 2, Vg) : null;
+            return 1 === c ? (a[2] = null, a[1] = 2, Vg) : 2 === c ? (a[1] = 4, Vg) : 3 === c ? (c = a[2], ek(a, c)) : 4 === c ? dk(a, 7, b) : 5 === c ? (a[2] = null, a[1] = 6, Vg) : 6 === c ? (c = a[2], a[2] = c, a[1] = 3, Vg) : 7 === c ? (c = qc.w(Jk, Qc, a[2]), a[7] = c, a[2] = null, a[1] = 2, Vg) : null;
           };
         }(a, b), a, b);
       }(), f = function() {
@@ -8299,12 +8288,21 @@ function Vk() {
         b[6] = a;
         return b;
       }();
-      return bi(f);
+      return ck(f);
     };
   }(b, a));
   return b;
 })();
-var qa = !1, pa = function() {
+var Tk = [{id:1111, last_name:"Denham", first_name:"Ariel"}, {id:1212, last_name:"Worsley", first_name:"John"}, {id:15990, last_name:"Bourgeois", first_name:"Paulette"}, {id:25041, last_name:"Bianco", first_name:"Margery Williams"}, {id:16, last_name:"Alcott", first_name:"Louisa May"}, {id:4156, last_name:"King", first_name:"Stephen"}, {id:1866, last_name:"Herbert", first_name:"Frank"}, {id:1644, last_name:"Hogarth", first_name:"Burne"}, {id:2031, last_name:"Brown", first_name:"Margaret Wise"}, {id:115, 
+last_name:"Poe", first_name:"Edgar Allen"}, {id:7805, last_name:"Lutz", first_name:"Mark"}, {id:7806, last_name:"Christiansen", first_name:"Tom"}, {id:1533, last_name:"Brautigan", first_name:"Richard"}, {id:1717, last_name:"Brite", first_name:"Poppy Z."}, {id:2112, last_name:"Gorey", first_name:"Edward"}, {id:2001, last_name:"Clarke", first_name:"Arthur C."}, {id:1213, last_name:"Brookins", first_name:"Andrew"}, {id:25043, last_name:"Simon", first_name:"Neil"}, {id:1809, last_name:"Geisel", first_name:"Theodor Seuss"}], 
+Uk = [{id:7808, title:"The Shining", author_id:4156, subject_id:9}, {id:4513, title:"Dune", author_id:1866, subject_id:15}, {id:4267, title:"2001: A Space Odyssey", author_id:2001, subject_id:15}, {id:1608, title:"The Cat in the Hat", author_id:1809, subject_id:2}, {id:1590, title:"Bartholomew and the Oobleck", author_id:1809, subject_id:2}, {id:1591, title:"One Fish, Two Fish, Red Fish, Blue Fish", author_id:1809, subject_id:2}, {id:1592, title:"Horton Hears a Who", author_id:1809, subject_id:2}, 
+{id:1593, title:"The Lorax", author_id:1809, subject_id:2}, {id:25908, title:"Franklin in the Dark", author_id:15990, subject_id:2}, {id:1501, title:"Goodnight Moon", author_id:2031, subject_id:2}, {id:190, title:"Little Women", author_id:16, subject_id:6}, {id:1234, title:"The Velveteen Rabbit", author_id:25041, subject_id:3}, {id:2038, title:"Dynamic Anatomy", author_id:1644, subject_id:0}, {id:156, title:"The Tell-Tale Heart", author_id:115, subject_id:9}, {id:41473, title:"Programming Python", 
+author_id:7805, subject_id:4}, {id:41477, title:"Learning Python", author_id:7805, subject_id:4}, {id:41478, title:"Perl Cookbook", author_id:7806, subject_id:4}, {id:41472, title:"Practical PostgreSQL", author_id:1212, subject_id:4}], Vk = [{id:0, subject:"Arts"}, {id:1, subject:"Business"}, {id:2, subject:"Children's Books"}, {id:3, subject:"Classics"}, {id:4, subject:"Computers"}, {id:5, subject:"Cooking"}, {id:6, subject:"Drama"}, {id:7, subject:"Entertainment"}, {id:8, subject:"History"}, {id:9, 
+subject:"Horror"}, {id:10, subject:"Mystery"}, {id:11, subject:"Poetry"}, {id:12, subject:"Religion"}, {id:13, subject:"Romance"}, {id:14, subject:"Science"}, {id:15, subject:"Science Fiction"}];
+function Wk(a, b) {
+  return (vk.h ? vk.h(a) : vk.call(null, a)).insert(b);
+}
+;var qa = !1, pa = function() {
   function a(a) {
     var d = null;
     if (0 < arguments.length) {
@@ -8325,16 +8323,16 @@ var qa = !1, pa = function() {
   };
   a.C = b;
   return a;
-}(), Wk = !Fa(window.openDatabase);
-function Xk() {
-  return new X(null, 2, 5, Y, [qg, new X(null, 3, 5, Y, [vg, new X(null, 2, 5, Y, [Ch, "IndexedDB Needed"], null), new X(null, 2, 5, Y, [Dh, "IndexedDB gives browsers access to a SQLite-esque database, which the sandbox needs to function. Unfortunately only webkit browsers these days have IndexedDB, if you come back with Chrome, Safari or Opera you'll be able to try the sandbox."], null)], null)], null);
+}(), Xk = !Fa(window.openDatabase);
+function Yk() {
+  return new X(null, 2, 5, Y, [qg, new X(null, 3, 5, Y, [vg, new X(null, 2, 5, Y, [Dh, "IndexedDB Needed"], null), new X(null, 2, 5, Y, [Eh, "IndexedDB gives browsers access to a SQLite-esque database, which the sandbox needs to function. Unfortunately only webkit browsers these days have IndexedDB, if you come back with Chrome, Safari or Opera you'll be able to try the sandbox."], null)], null)], null);
 }
-function tk() {
-  return r(Wk) ? new X(null, 4, 5, Y, [fh, new X(null, 1, 5, Y, [zk], null), new X(null, 1, 5, Y, [yk], null), new X(null, 1, 5, Y, [Vk], null)], null) : new X(null, 1, 5, Y, [Xk], null);
+function kj() {
+  return r(Xk) ? new X(null, 4, 5, Y, [fh, new X(null, 1, 5, Y, [rj], null), new X(null, 1, 5, Y, [qj], null), new X(null, 1, 5, Y, [Sk], null)], null) : new X(null, 1, 5, Y, [Yk], null);
 }
 (function() {
-  var a = Fi(1);
-  ti(function(a) {
+  var a = ik(1);
+  Qj(function(a) {
     return function() {
       var c = function() {
         return function(a) {
@@ -8353,7 +8351,7 @@ function tk() {
                     }
                   } catch (h) {
                     if (h instanceof Object) {
-                      c[5] = h, ei(c), d = Vg;
+                      c[5] = h, fk(c), d = Vg;
                     } else {
                       throw h;
                     }
@@ -8387,20 +8385,20 @@ function tk() {
           return function(a) {
             var b = a[1];
             if (1 === b) {
-              return a[1] = r(Wk) ? 2 : 3, Vg;
+              return a[1] = r(Xk) ? 2 : 3, Vg;
             }
             if (2 === b) {
-              return b = Vi(), ci(a, 5, b);
+              return b = tk(), dk(a, 5, b);
             }
             if (3 === b) {
               return a[2] = null, a[1] = 4, Vg;
             }
             if (4 === b) {
-              var b = a[2], c = sk();
+              var b = a[2], c = jj();
               a[7] = b;
-              return di(a, c);
+              return ek(a, c);
             }
-            return 5 === b ? (b = Ni(a[2]), c = [Pi("authors", Mh), Pi("books", Nh), Pi("subjects", Oh)], c = Oi(Promise.all(c)), a[8] = b, ci(a, 6, c)) : 6 === b ? (b = Ni(a[2]), a[2] = b, a[1] = 4, Vg) : null;
+            return 5 === b ? (b = mk(a[2]), c = [Wk("authors", Tk), Wk("books", Uk), Wk("subjects", Vk)], c = nk(Promise.all(c)), a[8] = b, dk(a, 6, c)) : 6 === b ? (b = mk(a[2]), a[2] = b, a[1] = 4, Vg) : null;
           };
         }(a), a);
       }(), d = function() {
@@ -8408,7 +8406,7 @@ function tk() {
         d[6] = a;
         return d;
       }();
-      return bi(d);
+      return ck(d);
     };
   }(a));
   return a;
