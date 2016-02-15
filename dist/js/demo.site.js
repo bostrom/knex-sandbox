@@ -1562,7 +1562,7 @@ g.call = function() {
     a = this;
     return a.v.D ? a.v.D() : a.v.call(null);
   }
-  var F = null, F = function(F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, ff, Kg, Gi) {
+  var F = null, F = function(F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, gf, Lg, Gi) {
     switch(arguments.length) {
       case 1:
         return Qa.call(this, F);
@@ -1603,11 +1603,11 @@ g.call = function() {
       case 19:
         return d.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je);
       case 20:
-        return c.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, ff);
+        return c.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, gf);
       case 21:
-        return b.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, ff, Kg);
+        return b.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, gf, Lg);
       case 22:
-        return a.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, ff, Kg, Gi);
+        return a.call(this, F, ma, ra, sa, wa, Aa, Ea, Ka, Pa, Sa, ab, ib, wb, Nb, Yb, wc, Rc, sd, je, gf, Lg, Gi);
     }
     throw Error("Invalid arity: " + arguments.length);
   };
@@ -4394,7 +4394,7 @@ g.Xa = function() {
   return new ef({}, this.o.length, Ja(this.o));
 };
 g.da = function() {
-  return zb(gf, this.meta);
+  return zb(ff, this.meta);
 };
 g.ea = function(a, b) {
   return Ad(b, this);
@@ -4497,7 +4497,7 @@ g.h = function(a) {
 g.l = function(a, b) {
   return this.O(null, a, b);
 };
-var gf = new n(null, 0, [], Cc), hf = 8;
+var ff = new n(null, 0, [], Cc), hf = 8;
 n.prototype[Ia] = function() {
   return vc(this);
 };
@@ -5505,7 +5505,7 @@ var Pf = function Pf() {
 };
 Pf.C = function(a) {
   return r(he(a)) ? Cd(function(a, c) {
-    return Qc.l(r(a) ? a : gf, c);
+    return Qc.l(r(a) ? a : ff, c);
   }, a) : null;
 };
 Pf.J = 0;
@@ -5619,7 +5619,7 @@ g.h = function(a) {
 g.l = function(a, b) {
   return this.O(null, a, b);
 };
-var Sf = new Qf(null, gf, Cc);
+var Sf = new Qf(null, ff, Cc);
 Qf.prototype[Ia] = function() {
   return vc(this);
 };
@@ -6022,7 +6022,7 @@ function lg() {
   var a = O.h ? O.h(mg) : O.call(null, mg), b = R([ng, !0], 0), c = od(b) ? ce(oe, b) : b, d = Wc(c, ng);
   return function(a, c, d, k) {
     return function p(q) {
-      return (q ? r(r(null) ? null : q.Kc) || (q.Ub ? 0 : u(jg, q)) : u(jg, q)) ? kg(q, ce(Mf, b)) : od(q) ? Tf(W.l(p, q)) : gd(q) ? re(null == q ? null : Ya(q), W.l(p, q)) : Da(q) ? Ke(W.l(p, q)) : Ga(q) === Object ? re(gf, function() {
+      return (q ? r(r(null) ? null : q.Kc) || (q.Ub ? 0 : u(jg, q)) : u(jg, q)) ? kg(q, ce(Mf, b)) : od(q) ? Tf(W.l(p, q)) : gd(q) ? re(null == q ? null : Ya(q), W.l(p, q)) : Da(q) ? Ke(W.l(p, q)) : Ga(q) === Object ? re(ff, function() {
         return function(a, b, c, d) {
           return function H(e) {
             return new Qd(null, function(a, b, c, d) {
@@ -6067,7 +6067,7 @@ var og = {};
 var pg = new U(null, "span.primitive-number", "span.primitive-number", -665034496), qg = new U(null, "div.center", "div.center", 1338956224), rg = new U(null, "on-set", "on-set", -140953470), sg = new U(null, "div.hydration-error", "div.hydration-error", -1182518173), tg = new U(null, "div.hydration-display-records", "div.hydration-display-records", -643544925), ug = new U(null, "span.primitive-string", "span.primitive-string", 694485187), vg = new U(null, "div.alert.alert-danger", "div.alert.alert-danger", 
 -890058301), wg = new U(null, "span.object-view-entry-value", "span.object-view-entry-value", 1392477795), xg = new U(null, "div.array-view.expander-container", "div.array-view.expander-container", -801965437), yg = new U(null, "div.examples", "div.examples", -1009767485), za = new U(null, "meta", "meta", 1499536964), zg = new U(null, "span.expander", "span.expander", -563604764), Ba = new U(null, "dup", "dup", 556298533), Ag = new U(null, "div.hydration-display", "div.hydration-display", 882572613), 
 Bg = new U(null, "pre", "pre", 2118456869), Cg = new U(null, "key", "key", -1516042587), Dg = new U(null, "li.pull-right.knex-version", "li.pull-right.knex-version", -1328888954), Eg = new U(null, "ul.nav.nav-tabs", "ul.nav.nav-tabs", 1865557319), Fg = new U(null, "derefed", "derefed", 590684583), Gg = new U(null, "div.hydration-display-title", "div.hydration-display-title", 1975490183), Hg = new U(null, "displayName", "displayName", -809144601), pe = new U(null, "validator", "validator", -1966190681), 
-Ig = new U(null, "cljsRender", "cljsRender", 247449928), Jg = new U(null, "finally-block", "finally-block", 832982472), Lg = new U(null, "bindings", "bindings", 1271397192), Mg = new U(null, "span.sql-view-header", "span.sql-view-header", -1834974999), Ng = new U(null, "li", "li", 723558921), Og = new U(null, "value", "value", 305978217), Pg = new U(null, "span.example-hydration", "span.example-hydration", -317688502), Qg = new U(null, "div.records-list", "div.records-list", -255231158), Rg = new U(null, 
+Ig = new U(null, "cljsRender", "cljsRender", 247449928), Jg = new U(null, "finally-block", "finally-block", 832982472), Kg = new U(null, "bindings", "bindings", 1271397192), Mg = new U(null, "span.sql-view-header", "span.sql-view-header", -1834974999), Ng = new U(null, "li", "li", 723558921), Og = new U(null, "value", "value", 305978217), Pg = new U(null, "span.example-hydration", "span.example-hydration", -317688502), Qg = new U(null, "div.records-list", "div.records-list", -255231158), Rg = new U(null, 
 "header.db-schema", "header.db-schema", 732638122), Sg = new U(null, "a.expander", "a.expander", 1322821771), Tg = new U(null, "width", "width", -384071477), Ug = new U(null, "div.sql-view", "div.sql-view", -1627977429), Vg = new U(null, "recur", "recur", -437573268), Wg = new U(null, "catch-block", "catch-block", 1175212748), Xg = new U(null, "src", "src", -1651076051), Yg = new U(null, "div.sql-view-bindings", "div.sql-view-bindings", 1235997037), bg = new U(null, "fallback-impl", "fallback-impl", 
 -1501286995), xa = new U(null, "flush-on-newline", "flush-on-newline", -151457939), Zg = new U(null, "componentWillUnmount", "componentWillUnmount", 1573788814), $g = new U(null, "div.hydration-input", "div.hydration-input", 1118611150), ah = new U(null, "charset", "charset", -1063822193), bh = new U(null, "on-click", "on-click", 1632826543), ch = new U(null, "shouldComponentUpdate", "shouldComponentUpdate", 1795750960), dh = new U(null, "style", "style", -496642736), eh = new U(null, "textarea", 
 "textarea", -650375824), fh = new U(null, "div", "div", 1057191632), ya = new U(null, "readably", "readably", 1129599760), Vf = new U(null, "more-marker", "more-marker", -14717935), gh = new U(null, "for", "for", -1323786319), hh = new U(null, "render", "render", -1408033454), ih = new U(null, "sql", "sql", 1251448786), jh = new U(null, "div.examples-container", "div.examples-container", -594635501), kh = new U(null, "div.half", "div.half", 1332116275), lh = new U(null, "div.object-view-entry", "div.object-view-entry", 
@@ -6090,7 +6090,7 @@ function Qh(a) {
       qc.K(b, Yc, c, d);
       return d;
     };
-  }(ne ? ne(gf) : me.call(null, gf));
+  }(ne ? ne(ff) : me.call(null, ff));
 }
 var Rh = new Qf(null, new n(null, 2, ["aria", null, "data", null], null), null);
 function Sh(a) {
@@ -6203,7 +6203,7 @@ function Xh(a) {
   a = Wh(a);
   return null == a ? null : a.getAttribute("data-reactid");
 }
-var Yh = ne ? ne(gf) : me.call(null, gf);
+var Yh = ne ? ne(ff) : me.call(null, ff);
 function Zh(a) {
   var b = document.getElementById("app");
   return React.renderComponent(a.D ? a.D() : a.call(null), b, function() {
@@ -6601,7 +6601,7 @@ g.Wa = function() {
   return r(a.ob) ? li(this) : a.state;
 };
 function qi(a, b) {
-  var c = od(b) ? ce(oe, b) : b, d = Wc(c, qh), e = Wc(c, rg), f = Wc(c, xh), c = Wc(c, Fg), d = N.l(d, !0) ? li : d, h = null != c, e = new pi(a, null, !h, h, null, gf, d, e, f);
+  var c = od(b) ? ce(oe, b) : b, d = Wc(c, qh), e = Wc(c, rg), f = Wc(c, xh), c = Wc(c, Fg), d = N.l(d, !0) ? li : d, h = null != c, e = new pi(a, null, !h, h, null, ff, d, e, f);
   null != c && (r(!1) && qc.l(ei, sc), e.Zb(0, c));
   return e;
 }
@@ -6820,7 +6820,7 @@ var Ii = new n(null, 2, [ch, null, Zg, null], null), Ji = Qh(Th);
 function Ki(a) {
   return Dd(function(a, c, d) {
     return Yc.w(a, Od.h(Ji.h ? Ji.h(c) : Ji.call(null, c)), d);
-  }, gf, a);
+  }, ff, a);
 }
 function Li(a) {
   return Pf.C(R([Ii, a], 0));
@@ -6866,7 +6866,7 @@ function Ni(a) {
     return function(a, b, c) {
       return Yc.w(a, b, Hi(b, c, d));
     };
-  }(b, c, d, e, f), gf, f);
+  }(b, c, d, e, f), ff, f);
 }
 function Oi(a) {
   return Dd(function(a, c, d) {
@@ -7458,7 +7458,7 @@ function Qj(a) {
   }, Rj.nb = !0, Rj.mb = "cljs.core.async.impl.channels/t17656", Rj.Ab = function(b, d) {
     return A(d, "cljs.core.async.impl.channels/t17656");
   });
-  return new Rj(Sj, b, gf);
+  return new Rj(Sj, b, ff);
 };
 function Tj(a, b) {
   this.handler = a;
@@ -7701,7 +7701,7 @@ function Zj(a) {
   }, ak.nb = !0, ak.mb = "cljs.core.async.impl.ioc-helpers/t17528", ak.Ab = function(b, d) {
     return A(d, "cljs.core.async.impl.ioc-helpers/t17528");
   });
-  return new ak(bk, b, gf);
+  return new ak(bk, b, ff);
 };
 function ck(a) {
   try {
@@ -7813,7 +7813,7 @@ var kk = function jk(b) {
   }, sj.nb = !0, sj.mb = "cljs.core.async/t14821", sj.Ab = function(b, d) {
     return A(d, "cljs.core.async/t14821");
   });
-  return new sj(jk, b, gf);
+  return new sj(jk, b, ff);
 }(function() {
   return null;
 });
@@ -7861,7 +7861,7 @@ var nk = function nk(b) {
   }, lk.nb = !0, lk.mb = "cljs-promises.async/t23029", lk.Ab = function(b, d) {
     return A(d, "cljs-promises.async/t23029");
   });
-  return new lk(nk, b, gf);
+  return new lk(nk, b, ff);
 };
 var ok = new Knex({client:"websql", useNullAsDefault:!0}), pk = ok.schema;
 window.Ac = ok;
@@ -7897,7 +7897,7 @@ function wk() {
   var a = ik(null);
   console.log = function(a) {
     return function(c) {
-      c = tj(a, new n(null, 2, [ih, c.sql, Lg, c.bindings], null), kk);
+      c = tj(a, new n(null, 2, [ih, c.sql, Kg, c.bindings], null), kk);
       return r(c) ? O.h ? O.h(c) : O.call(null, c) : !0;
     };
   }(a);
@@ -8088,9 +8088,9 @@ function Kk() {
           return function(a) {
             var b = a[1];
             if (7 === b) {
-              var b = a[7], b = a[8], c = eg(R(["and error in here ", b], 0)), b = b.message;
+              var b = a[7], c = a[8], c = eg(R(["and error in here ", b], 0)), b = b.message;
               a[9] = c;
-              a[7] = b;
+              a[8] = b;
               a[1] = r(b) ? 9 : 10;
               return Vg;
             }
@@ -8122,7 +8122,7 @@ function Kk() {
               a[13] = c;
               return dk(a, 5, m);
             }
-            return 11 === b ? (b = a[2], b = V.l ? V.l(Ik, b) : V.call(null, Ik, b), a[2] = b, a[1] = 8, Vg) : 9 === b ? (b = a[7], a[2] = b, a[1] = 11, Vg) : 5 === b ? (d = a[10], b = a[2], c = b.h ? b.h(0) : b.call(null, 0), b = b.h ? b.h(1) : b.call(null, 1), a[10] = c, a[8] = b, a[1] = r(c) ? 6 : 7, Vg) : 10 === b ? (b = a[8], b = b.toString(), a[2] = b, a[1] = 11, Vg) : 8 === b ? (b = a[2], a[2] = b, a[1] = 4, Vg) : null;
+            return 11 === b ? (b = a[2], b = V.l ? V.l(Ik, b) : V.call(null, Ik, b), a[2] = b, a[1] = 8, Vg) : 9 === b ? (c = a[8], a[2] = c, a[1] = 11, Vg) : 5 === b ? (d = a[10], b = a[2], c = b.h ? b.h(0) : b.call(null, 0), b = b.h ? b.h(1) : b.call(null, 1), a[7] = b, a[10] = c, a[1] = r(c) ? 6 : 7, Vg) : 10 === b ? (b = a[7], b = b.toString(), a[2] = b, a[1] = 11, Vg) : 8 === b ? (b = a[2], a[2] = b, a[1] = 4, Vg) : null;
           };
         }(a), a);
       }(), d = function() {
@@ -8151,12 +8151,14 @@ function Mk() {
 }
 function Nk(a) {
   var b = O.h ? O.h(Jk) : O.call(null, Jk), c = S(b), d = O.h ? O.h(mg) : O.call(null, mg), e = S(d);
-  return new X(null, 4, 5, Y, [Eg, new X(null, 2, 5, Y, [Ng, new X(null, 3, 5, Y, [Ih, new n(null, 1, [bh, function() {
-    return function() {
+  return new X(null, 4, 5, Y, [Eg, new X(null, 2, 5, Y, [Ng, new X(null, 3, 5, Y, [Ih, new n(null, 2, [Gh, "#", bh, function() {
+    return function(b) {
+      b.preventDefault();
       return V.l ? V.l(a, "records") : V.call(null, a, "records");
     };
-  }(b, c, d, e)], null), [x("returned "), x(e), x(" row"), x(N.l(e, 1) ? null : "s")].join("")], null)], null), new X(null, 2, 5, Y, [Ng, new X(null, 3, 5, Y, [Ih, new n(null, 1, [bh, function() {
-    return function() {
+  }(b, c, d, e)], null), [x("returned "), x(e), x(" row"), x(N.l(e, 1) ? null : "s")].join("")], null)], null), new X(null, 2, 5, Y, [Ng, new X(null, 3, 5, Y, [Ih, new n(null, 2, [Gh, "#", bh, function() {
+    return function(b) {
+      b.preventDefault();
       return V.l ? V.l(a, "sql") : V.call(null, a, "sql");
     };
   }(b, c, d, e)], null), [x(c), x(" SQL statement"), x(N.l(c, 1) ? null : "s")].join("")], null)], null), new X(null, 3, 5, Y, [Dg, "knex ", window.Ac.VERSION], null)], null);
@@ -8164,7 +8166,7 @@ function Nk(a) {
 function Ok(a) {
   var b = Y, c = new X(null, 3, 5, Y, [Ah, new X(null, 2, 5, Y, [Mg, "query: "], null), new X(null, 2, 5, Y, [th, ih.h(a)], null)], null), d = Y, e = new X(null, 2, 5, Y, [Mg, "bindings: "], null), f = Y;
   a: {
-    var h = Lg.h(a);
+    var h = Kg.h(a);
     a = new ka;
     for (h = G(h);;) {
       if (h) {

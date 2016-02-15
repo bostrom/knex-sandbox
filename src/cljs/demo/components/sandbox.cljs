@@ -74,10 +74,10 @@
         row-c (count rows)]
     [:ul.nav.nav-tabs
      [:li
-      [:a {:on-click #(reset! current-atom "records")}
+      [:a {:href "#" :on-click #(do (.preventDefault %) (reset! current-atom "records"))}
        (str "returned " row-c " row" (when-not (= row-c 1) "s"))]]
      [:li
-      [:a {:on-click #(reset! current-atom "sql")}
+      [:a {:href "#" :on-click #(do (.preventDefault %) (reset! current-atom "sql"))}
        (str sqls-c " SQL statement" (when-not (= sqls-c 1) "s"))]]
      [:li.pull-right.knex-version "knex " (-> js/window .-knex .-VERSION)]]))
 
